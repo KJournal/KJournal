@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=32&duration=2800&pause=900&color=7C3AED&center=true&vCenter=true&width=520&lines=KJournal+Official;Your+timeline%2C+your+record.;Built+for+personal+clarity." alt="KJournal Official">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=32&duration=2800&pause=900&color=7C3AED&center=true&vCenter=true&width=520&lines=KJournal+Official;Your+timeline%2C+your+record.;Built+for+personal+clarity." alt="KJournal">
 
   
 
@@ -18,7 +18,7 @@
 
 ---
 
-## KJournal Official
+## KJournal
 
 개인 기록과 효과 타임라인을 관리하는 Android 프로젝트입니다.
 

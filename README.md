@@ -33,7 +33,8 @@
 
 ### Developer
 
-[@exaqueGithb](https://github.com/exaqueGithb )
+[@exaqueGithb](https://github.com/exaqueGithb ) · [@galaxeun](https://github.com/galaxeun )
+
 
   
 

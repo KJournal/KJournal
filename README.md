@@ -5,7 +5,7 @@
   
 
 
-**Personal journal · *
+**Personal journal · Effect timeline · Android**
 
   
 

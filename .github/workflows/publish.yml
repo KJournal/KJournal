@@ -1,0 +1,339 @@
+name: publish
+
+# 브랜치 = 배포 채널
+# - main        : 정식(안정) 릴리즈 → 사이트 '정식' 채널 배포 + GitHub 정식 릴리즈(v<버전>)
+# - public-beta : 배타(Public Beta) → 사이트 '배타' 채널 배포 + 프리릴리즈(beta-*)
+# - 그 외 브랜치: 내부테스트용 프리릴리즈만 생성(사이트 배포 안 함)
+#
+# OTA 채널 분리
+# - 정식 앱은 ota/version.json, 배타 앱은 ota/beta-version.json 을 본다.
+#   (배타 빌드는 아래 'OTA 채널 적용' 스텝에서 OtaUpdater 의 URL 을 치환)
+on:
+  push:
+    branches: ['**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  KJOURNAL_SOURCE: reverse-engineering/kjournal-157-decoded
+
+jobs:
+  build-test-release:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: JDK 설치
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: 앱 서명 키 복원
+        env:
+          APP_KEYSTORE_BASE64: ${{ secrets.APP_KEYSTORE_BASE64 }}
+        run: |
+          set -euo pipefail
+          if [ -n "${APP_KEYSTORE_BASE64:-}" ]; then
+            printf '%s' "$APP_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/app.keystore"
+            echo "keystore restored ($(wc -c < "$RUNNER_TEMP/app.keystore") bytes)"
+          else
+            echo "::warning::APP_KEYSTORE_BASE64 시크릿이 없습니다. unsigned 로 빌드합니다."
+          fi
+
+      - name: 버전/채널 확인
+        id: ver
+        run: |
+          set -euo pipefail
+          yml="${KJOURNAL_SOURCE}/apktool.yml"
+          vc=$(sed -nE 's/^  versionCode: *//p' "$yml" | head -n1)
+          vn=$(sed -nE 's/^  versionName: *//p' "$yml" | head -n1)
+          label=$(printf '%s' "$vn" | tr ' ' '-')
+          # 기준 브랜치 확보(비보호 브랜치의 빌드 채널 판정용)
+          git fetch --no-tags origin main public-beta 2>/dev/null || true
+          if [ "${GITHUB_REF_NAME}" = "main" ]; then
+            channel=stable
+          elif [ "${GITHUB_REF_NAME}" = "public-beta" ]; then
+            channel=beta
+          else
+            channel=internal
+          fi
+          # 빌드 채널(패키지/이름/OTA): main=정식, public-beta=배타,
+          # 그 외 브랜치는 기반 브랜치가 public-beta면 배타, 아니면 정식으로 빌드한다.
+          if [ "${GITHUB_REF_NAME}" = "public-beta" ]; then
+            build_beta=true
+          elif [ "${GITHUB_REF_NAME}" = "main" ]; then
+            build_beta=false
+          elif git merge-base --is-ancestor origin/public-beta HEAD 2>/dev/null; then
+            build_beta=true
+          else
+            build_beta=false
+          fi
+          if [ "$build_beta" = "true" ]; then
+            apk_name="KJournal-${label}-beta"
+          else
+            apk_name="KJournal-${label}"
+          fi
+          {
+            echo "VCODE=$vc"
+            echo "VNAME=$vn"
+            echo "LABEL=$label"
+            echo "CHANNEL=$channel"
+            echo "BUILD_BETA=$build_beta"
+            echo "APK_NAME=$apk_name"
+          } >> "$GITHUB_ENV"
+          # 배타 빌드는 앱 ID/이름이 바뀌므로 스모크 테스트도 배타 패키지를 보게 한다.
+          if [ "$build_beta" = "true" ]; then
+            {
+              echo "KJOURNAL_PKG=com.jiwxn3.KJournal.beta"
+              echo "KJOURNAL_MAIN=com.jiwxn3.KJournal.beta/com.isaakhanimann.journal.MainActivity"
+              echo "KJOURNAL_OTA_URL=https://kjournal.github.io/kjournal-site/ota/beta-version.json"
+            } >> "$GITHUB_ENV"
+          fi
+          echo "source: $KJOURNAL_SOURCE"
+          echo "version: $vn ($vc) / label: $label / release-channel: $channel / build-beta: $build_beta / apk: $apk_name"
+
+      - name: "채널별 빌드 변형 (배타: 앱 ID/이름/authority/OTA)"
+        run: |
+          set -euo pipefail
+          src="$KJOURNAL_SOURCE"
+          ota_smali="${src}/smali/com/isaakhanimann/journal/ota/OtaUpdater.smali"
+          if [ "$BUILD_BETA" != "true" ]; then
+            echo "정식 빌드: OTA version.json, 앱 ID/이름 그대로"
+            exit 0
+          fi
+          # 1) OTA 엔드포인트 분리(배타 전용)
+          sed -i 's#ota/version.json#ota/beta-version.json#g' "$ota_smali"
+          # 2) 배타 앱 ID (정식과 공존 가능) — 매니페스트 package/authority
+          sed -i 's#com\.jiwxn3\.KJournal#com.jiwxn3.KJournal.beta#g' "$src/AndroidManifest.xml"
+          # 3) smali 안의 authority 문자열도 동일하게 변경
+          grep -rl 'com\.jiwxn3\.KJournal' "$src/smali" 2>/dev/null | while IFS= read -r f; do
+            sed -i 's#com\.jiwxn3\.KJournal#com.jiwxn3.KJournal.beta#g' "$f"
+          done || true
+          # 4) 앱 이름 "KJournal Beta"
+          for f in "$src"/res/values*/strings.xml; do
+            [ -f "$f" ] || continue
+            sed -i 's#<string name="app_name">[^<]*</string>#<string name="app_name">KJournal Beta</string>#' "$f"
+          done
+          echo "beta: package=com.jiwxn3.KJournal.beta / label=KJournal Beta / ota=beta-version.json"
+
+      - name: APK 빌드 + 서명
+        env:
+          APP_KEYSTORE_PASS: ${{ secrets.APP_KEYSTORE_PASS }}
+          APP_KEY_PASS: ${{ secrets.APP_KEY_PASS }}
+          APP_KEY_ALIAS: ${{ secrets.APP_KEY_ALIAS }}
+        run: |
+          set -euo pipefail
+          if [ -f "$RUNNER_TEMP/app.keystore" ]; then
+            export KEYSTORE="$RUNNER_TEMP/app.keystore"
+            export KEYSTORE_PASS="${APP_KEYSTORE_PASS:-}"
+            export KEY_PASS="${APP_KEY_PASS:-}"
+            export KEY_ALIAS="${APP_KEY_ALIAS:-kjdebug}"
+          fi
+          export APK_NAME="$APK_NAME"
+          bash build/build.sh
+          ls -l build/out
+
+      - name: 릴리즈 메타데이터 sha256 자동 갱신
+        run: |
+          set -euo pipefail
+          apk="build/out/${APK_NAME}.apk"
+          sha="$(sha256sum "$apk" | awk '{print $1}')"
+          echo "SHA256=${sha}" >> "$GITHUB_ENV"
+          echo "APK sha256: ${sha}"
+          python3 - "$LABEL" "$sha" <<'PY'
+          import json, os, sys
+          label, sha = sys.argv[1], sys.argv[2]
+          for name in ("release/KJournal-%s-version.json" % label,
+                       "release/KJournal-%s-version-public.json" % label):
+              if not os.path.exists(name):
+                  print("skip(없음): %s" % name)
+                  continue
+              with open(name, encoding="utf-8") as fh:
+                  data = json.load(fh)
+              old = data.get("sha256")
+              data["sha256"] = sha
+              with open(name, "w", encoding="utf-8") as fh:
+                  json.dump(data, fh, ensure_ascii=False, indent=2)
+                  fh.write("\n")
+              print("%s: %s -> %s" % (name, old, sha))
+          PY
+
+      - name: Enable KVM (에뮬레이터 가속)
+        run: |
+          # GitHub 호스팅 러너에서는 udev 규칙을 추가한다.
+          # self-hosted 러너에서는 sudo 비밀번호가 없을 수 있으므로 실패하지 않게 처리하고,
+          # /dev/kvm 접근 가능 여부만 확인한다(러너 사용자를 kvm 그룹에 추가 권장).
+          if sudo -n true 2>/dev/null; then
+            echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo -n tee /etc/udev/rules.d/99-kvm4all.rules >/dev/null || true
+            sudo -n udevadm control --reload-rules || true
+            sudo -n udevadm trigger --name-match=kvm || true
+            echo "KVM udev 규칙 적용 시도 완료"
+          else
+            echo "sudo(비밀번호 없이) 사용 불가 - self-hosted 러너로 가정하고 /dev/kvm 권한만 확인합니다."
+          fi
+          if [ -r /dev/kvm ] && [ -w /dev/kvm ]; then
+            echo "/dev/kvm 접근 가능"
+          else
+            echo "::warning::/dev/kvm 접근 불가 - 에뮬레이터 스모크 스텝이 실패할 수 있습니다. (러너 사용자를 kvm 그룹에 추가하세요)"
+          fi
+
+      - name: APK 정적 검증 (필수 게이트)
+        run: python3 scripts/ci/verify_apk.py "build/out/${APK_NAME}.apk"
+
+      - name: 버전 표기 일관성 검증
+        run: python3 scripts/ci/verify_version.py
+
+      - name: 기능 테스트 (에뮬레이터에서 전 기능 스모크 테스트)
+        id: smoke
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+          target: google_apis
+          profile: pixel_5
+          cores: 4
+          ram-size: 4096M
+          emulator-boot-timeout: 900
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -no-metrics -camera-back none -camera-front none
+          pre-emulator-launch-script: adb start-server
+          disable-animations: true
+          script: |
+            adb wait-for-device
+            adb shell 'while [ "$(getprop sys.boot_completed)" != "1" ]; do sleep 1; done' || true
+            adb shell settings put global window_animation_scale 0 || true
+            adb shell settings put global transition_animation_scale 0 || true
+            adb shell settings put global animator_duration_scale 0 || true
+            adb shell settings put global hide_error_dialogs 1 || true
+            adb shell pm disable-user --user 0 com.google.android.apps.nexuslauncher || true
+            sleep 25
+            adb install -r "build/out/${APK_NAME}.apk"
+            adb logcat -c || true
+            python3 -u scripts/e2e_test.py || { echo "::warning::e2e 1차 실패(에뮬레이터 불안정 가능) - 1회 재시도"; sleep 15; adb logcat -c || true; python3 -u scripts/e2e_test.py; }
+
+      - name: 배포 게이트 (main은 기능 테스트 통과 필요)
+        if: github.ref == 'refs/heads/main' && steps.smoke.outcome != 'success'
+        run: |
+          echo "::error::기능 테스트가 실패하여 main 배포를 중단합니다."
+          exit 1
+
+      - name: 릴리즈 생성 + APK 업로드
+        if: steps.smoke.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          apk="build/out/${APK_NAME}.apk"
+          if [ "$CHANNEL" = "stable" ]; then
+            tag="v${LABEL}"
+            title="KJournal ${VNAME} (${VCODE})"
+            notes="- 정식 릴리즈 (main)
+          - OTA: https://kjournal.github.io/kjournal-site/ota/version.json
+          - F-Droid: https://kjournal.github.io/kjournal-site/fdroid/repo
+          - 라이선스: GPL-3.0
+          - SHA256: ${SHA256}
+          - 기능 테스트: ${{ steps.smoke.outcome }}"
+            gh release create "$tag" "$apk" --title "$title" --notes "$notes" --target "$GITHUB_SHA" \
+              || gh release upload "$tag" "$apk" --clobber
+          elif [ "$CHANNEL" = "beta" ]; then
+            tag="beta-${LABEL}-${GITHUB_RUN_NUMBER}"
+            title="KJournal ${VNAME} (${VCODE}) — 배타 빌드 (public-beta)"
+            notes="배타(Public Beta) 빌드입니다. 정식 채널로 유도되지 않습니다.
+          - 브랜치: ${GITHUB_REF_NAME}
+          - 커밋: ${GITHUB_SHA}
+          - OTA: https://kjournal.github.io/kjournal-site/ota/beta-version.json
+          - SHA256: ${SHA256}
+          - 기능 테스트: ${{ steps.smoke.outcome }}"
+            gh release create "$tag" "$apk" --title "$title" --notes "$notes" --prerelease --target "$GITHUB_SHA" \
+              || gh release upload "$tag" "$apk" --clobber
+          else
+            safe_branch=$(printf '%s' "${GITHUB_REF_NAME}" | tr '/ ' '--')
+            tag="internal-${safe_branch}-${GITHUB_RUN_NUMBER}"
+            title="KJournal ${VNAME} (${VCODE}) — 내부테스트용 빌드 (${GITHUB_REF_NAME})"
+            notes="내부테스트용 빌드입니다. 배포되지 않습니다.
+          - 브랜치: ${GITHUB_REF_NAME}
+          - 커밋: ${GITHUB_SHA}
+          - SHA256: ${SHA256}
+          - 기능 테스트: ${{ steps.smoke.outcome }}"
+            gh release create "$tag" "$apk" --title "$title" --notes "$notes" --prerelease --target "$GITHUB_SHA" \
+              || gh release upload "$tag" "$apk" --clobber
+          fi
+
+      - name: 사이트 전달 (정식=main, 배타=public-beta)
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/public-beta'
+        env:
+          SITE_REPO_TOKEN: ${{ secrets.SITE_REPO_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${SITE_REPO_TOKEN:-}" ]; then
+            echo "::warning::SITE_REPO_TOKEN 시크릿이 없어 사이트 전달을 건너뜁니다."
+            exit 0
+          fi
+          apk="build/out/${APK_NAME}.apk"
+
+          # 채널별 목적지: 정식=dist/ (+ F-Droid metadata), 배타=dist/beta/ (+ metadata-beta)
+          if [ "$CHANNEL" = "beta" ]; then
+            dest_dir="dist/beta"
+            cl_dir="fdroid/metadata-beta/com.jiwxn3.KJournal"
+            ota_hold_value=""
+          else
+            dest_dir="dist"
+            cl_dir="fdroid/metadata/com.jiwxn3.KJournal"
+            ota_hold_value=""
+            if [ -f release/ota_hold.txt ]; then
+              ota_hold_value="$(tr -d ' \t\r\n' < release/ota_hold.txt)"
+            fi
+          fi
+
+          git clone --depth 1 "https://x-access-token:${SITE_REPO_TOKEN}@github.com/KJournal/kjournal-site.git" site
+          mkdir -p "site/${dest_dir}"
+          # 구버전 정리: 해당 채널 디렉터리는 최신 1개만 유지하고 새 APK 를 업로드한다.
+          find "site/${dest_dir}" -maxdepth 1 -name '*.apk' -delete
+          cp "$apk" "site/${dest_dir}/$(basename "$apk")"
+
+          # 채널별 changelog (파일이 없을 때만 작성, 있으면 유지)
+          mkdir -p "site/${cl_dir}/ko/changelogs" "site/${cl_dir}/en-US/changelogs"
+          cl_ko="site/${cl_dir}/ko/changelogs/${VCODE}.txt"
+          cl_en="site/${cl_dir}/en-US/changelogs/${VCODE}.txt"
+          if [ ! -f "$cl_ko" ]; then
+            vjson="release/KJournal-${LABEL}-version.json"
+            if [ -f "$vjson" ]; then
+              python3 -c "import json,sys;d=json.load(open(sys.argv[1],encoding='utf-8'));io=open(sys.argv[2],'w',encoding='utf-8');io.write(d.get('changelog') or ('KJournal %s\n' % d.get('versionName','')))" "$vjson" "$cl_ko"
+            else
+              printf 'KJournal %s\n' "$VNAME" > "$cl_ko"
+            fi
+            cp "$cl_ko" "$cl_en"
+            for f in "$cl_ko" "$cl_en"; do
+              awk -v d="$(TZ=Asia/Seoul date +%F)" 'NR==1{print; print ""; print "날짜: " d; next} {print}' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+            done
+            echo "changelog written: ${VCODE} (${CHANNEL})"
+          else
+            echo "changelog exists, kept: ${VCODE} (${CHANNEL})"
+          fi
+
+          cd site
+          git config user.name "kjournal-bot"
+          git config user.email "bot@users.noreply.github.com"
+          # 정식 채널만 OTA 홀드를 관리한다(홀드 파일 있으면 고정, 없으면 해제).
+          if [ "$CHANNEL" = "stable" ]; then
+            if [ -n "$ota_hold_value" ]; then
+              printf '%s\n' "$ota_hold_value" > .ota_hold
+              echo "ota hold set: $ota_hold_value"
+            elif [ -f .ota_hold ]; then
+              rm -f .ota_hold
+              echo "ota hold released"
+            fi
+          fi
+          git add -A
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "release: KJournal ${VNAME} (${VCODE}) [$CHANNEL]"
+          git push
+
+      # 참고: 빌드 APK 의 sha256 은 위 "릴리즈 메타데이터 sha256 자동 갱신" 스텝이 릴리즈
+      # 메타데이터/릴리즈 노트에 기록하고, 정식·배타 배포 시에는 사이트가 전달받은 APK 로부터
+      # OTA sha256 을 자동 계산한다. 레포로 되커밋하지 않는다(브랜치 레이스/보호 브랜치 규칙).

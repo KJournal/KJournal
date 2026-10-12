@@ -1,0 +1,16 @@
+# Generated build output (keep build scripts and apktool.jar tracked)
+/build/work/
+/build/out/
+/reverse-engineering/**/build/
+ 
+# Local build output
+*.idsig
+*.keystore
+*.jks
+*.pk8
+*.pem
+.env
+
+# python
+__pycache__/
+*.pyc

@@ -1,0 +1,4 @@
+﻿"file","line","english","korean","note"
+"fv3.smali","661"," dose"," 용량","substance + route + ' dose'"
+"gc.smali","1789"," route"," 경로","substance + ' route'"
+"d12.smali","2560"," color"," 색상","substance + ' color'"

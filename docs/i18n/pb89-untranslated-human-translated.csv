@@ -1,0 +1,278 @@
+id,screen,english,korean,evidence,file,line,AI번역,인간번역,인간번역
+t0001,custom_units_archive,Archive,,dump,id.smali,1406,보관함,보관함,보관함
+t0002,filters,All,,dump,er5.smali,36,전체,전체,전체
+t0003,misc,Name,,dump,ud.smali,584,이름,이름,이름
+t0004,safer_use,Duration,,dump,rv0.smali,1443,지속 시간,지속 시간,지속 시간
+t0005,settings,Back,,dump,iw0.smali,3427,뒤로,뒤로,뒤로
+t0006,settings,Preferences,,dump,iw0.smali,3269,환경설정,환경설정,환경설정
+t0007,substance_detail,Psilocybin,,dump,vb3.smali,6463,실로시빈,실로시빈,실로시빈
+t0008,timeline,Add,,dump,ew0.smali,5280,추가,추가,추가
+t0009,timeline,Cancel,,dump,ew0.smali,2808,취소,취소,취소
+t0010,timeline,Delete,,dump,ew0.smali,2973,삭제,삭제,삭제
+t0011,timeline,"Dosages, durations, interactions, tolerance, common names, psychoactive classes, toxicity and addiction potential come from PsychonautWiki. Substance summaries and additional categories come from Tripsit. Effects, dosage remarks, general & long term risks and safer use come from the DIZ (drug information center of Zurich).",,dump,ew0.smali,1951,"용량, 지속 시간, 상호작용, 내성, 통용 명칭, 정신활성 작용 분류, 독성 및 의존 가능성 정보는 PsychonautWiki에서 가져온다. 물질별 요약과 추가 분류는 TripSit에서 가져온다. 효과, 용량 관련 참고 사항, 일반적인 위험 및 장기적인 위험, 위해 감소 정보는 DIZ(취리히 약물정보센터)에서 가져온다.","용량, 지속 시간, 상호작용, 내성, 통용 명칭, 정신활성 작용 분류, 독성 및 의존 가능성 정보는 PsychonautWiki에서 제공합니다. 물질 요약과 추가 분류는 Tripsit에서 제공합니다. 효과, 용량 관련 주의사항, 일반 및 장기적 위험, 안전 사용 정보는 DIZ(취리히 약물정보센터)에서 제공합니다.","용량, 지속 시간, 상호작용, 내성, 통용 명칭, 정신활성 작용 분류, 독성 및 의존 가능성 정보는 PsychonautWiki에서 제공합니다. 물질 요약과 추가 분류는 Tripsit에서 제공합니다. 효과, 용량 관련 주의사항, 일반 및 장기적 위험, 안전 사용 정보는 DIZ(취리히 약물정보센터)에서 제공합니다."
+t0012,timeline,"Edit the article in PsychonautWiki so your edit might get approved by one of the PsychonautWiki moderators, especially if you can reference good sources. The changed information will come in the next update of the app. If the information to be changed comes from another source than PsychonautWiki contact support.",,dump,ew0.smali,1981,PsychonautWiki의 해당 문서를 수정하면 된다. 신뢰할 만한 출처를 함께 제시하면 PsychonautWiki 운영진의 검토를 거쳐 승인될 수 있다. 변경된 정보는 다음 앱 업데이트에 반영된다. PsychonautWiki 이외의 출처에서 가져온 정보를 수정하려면 고객지원에 문의하면 된다.,PsychonautWiki의 문서를 편집하세요. 신뢰할 만한 출처를 함께 제시하면 PsychonautWiki 운영진이 검토하여 수정이 승인될 수 있습니다. 변경된 정보는 다음 앱 업데이트에 반영됩니다. PsychonautWiki 이외의 출처에서 가져온 정보를 수정하려면 고객지원에 문의하세요.,PsychonautWiki의 문서를 편집하세요. 신뢰할 만한 출처를 함께 제시하면 PsychonautWiki 운영진이 검토하여 수정이 승인될 수 있습니다. 변경된 정보는 다음 앱 업데이트에 반영됩니다. PsychonautWiki 이외의 출처에서 가져온 정보를 수정하려면 고객지원에 문의하세요.
+t0013,timeline,How can the information be changed or added?,,dump,ew0.smali,1977,정보를 수정하거나 추가하려면 어떻게 하는가?,정보를 어떻게 변경하거나 추가하나요?,정보를 어떻게 변경하거나 추가하나요?
+t0014,timeline,If there is an interaction with a substance you ingested less than 2 days ago. It checks interaction both ways and checks if a substance is indirectly mentioned through its psychoactive class.,,dump,ew0.smali,1968,"최근 2일 이내에 사용한 물질과 상호작용이 있을 때 감지한다. 두 물질의 상호작용 정보를 양쪽 모두 확인하며, 특정 물질이 직접 언급되지 않아도 해당 물질이 속한 정신활성 작용 분류가 언급되어 있는지 확인한다.","최근 2일 이내에 섭취한 물질과 상호작용이 있을 경우 감지합니다. 상호작용은 양방향으로 확인하며, 특정 물질이 직접 언급되지 않더라도 그 물질이 속한 정신활성 작용 분류를 통해 간접 언급 여부를 검사합니다.","최근 2일 이내에 섭취한 물질과 상호작용이 있을 경우 감지합니다. 상호작용은 양방향으로 확인하며, 특정 물질이 직접 언급되지 않더라도 그 물질이 속한 정신활성 작용 분류를 통해 간접 언급 여부를 검사합니다."
+t0015,timeline,When does the app detect interactions?,,dump,ew0.smali,1964,앱은 언제 상호작용을 감지하는가?,앱은 언제 상호작용을 감지하나요?,앱은 언제 상호작용을 감지하나요?
+t0016,timeline,Where does the information come from?,,dump,ew0.smali,1947,정보의 출처는 어디인가?,정보의 출처는 어디인가요?,정보의 출처는 어디인가요?
+t0017,timeline,You,,dump,fa2.smali,495,나,나,나
+t0018,widget_notification,3 days ago,,dump,nf2.smali,746,3일 전,3일 전,3일 전
+t0019,widget_notification,Enable notifications in your phone's system settings to use this.,,dump,nf2.smali,1644,이 기능을 사용하려면 휴대전화의 시스템 설정에서 알림을 허용해야 한다.,이 기능을 사용하려면 휴대전화의 시스템 설정에서 알림을 허용하세요.,이 기능을 사용하려면 휴대전화의 시스템 설정에서 알림을 허용하세요.
+t0020,widget_notification,"Mon, 14 Sep",,dump,nf2.smali,673,9월 14일 (월),9월 14일 (월),9월 14일 (월)
+t0021,add_ingestion,Don't know the dose?,,smali,xw0.smali,291,용량을 모르는 경우,용량을 모르시나요?,용량을 모르시나요?
+t0022,add_ingestion,"You can log an unknown dose. But note that administering the wrong dosage of a substance can lead to negative experiences such as extreme anxiety, uncomfortable physical side effects, hospitalization, or (in extreme cases) death.",,smali,xw0.smali,123,"용량을 모르는 상태로도 기록할 수 있다. 다만, 부적절한 용량을 사용하면 극심한 불안이나 불편한 신체 증상 등 부정적인 경험이 생길 수 있으며, 입원 치료가 필요하거나 극단적인 경우 사망에 이를 수 있다.","모르는 용량이라도 기록할 수 있습니다. 다만, 잘못된 용량을 섭취하면 극심한 불안, 불편한 신체적 부작용, 입원 치료, 또는 (극단적인 경우) 사망과 같은 부정적인 경험을 초래할 수 있습니다.","모르는 용량이라도 기록할 수 있습니다. 다만, 잘못된 용량을 섭취하면 극심한 불안, 불편한 신체적 부작용, 입원 치료, 또는 (극단적인 경우) 사망과 같은 부정적인 경험을 초래할 수 있습니다."
+t0023,common,Edit ,,smali,gc.smali,1616,수정 ,수정 ,수정 
+t0024,contribution,Edit,,smali,ww0.smali,1342,수정,수정,수정
+t0025,contribution,Info is not approved,,smali,ww0.smali,2546,아직 승인되지 않은 정보,정보가 승인되지 않음,정보가 승인되지 않음
+t0026,contribution,Retry,,smali,ww0.smali,3634,다시 시도,다시 시도,다시 시도
+t0027,contribution,View breaks between experiences of above substances ,,smali,ww0.smali,4062,위 물질의 경험 기록 사이 간격 보기 ,위 물질의 경험 사이 간격 보기 ,위 물질의 경험 사이 간격 보기 
+t0028,custom_unit,Threshold,,smali,kk3.smali,11996,역치,역치,역치
+t0029,custom_unit_edit, Dose,,smali,p31.smali,6441, 용량, 용량, 용량
+t0030,custom_unit_edit, dose component,,smali,p31.smali,5180,개 용량 구성 요소, 용량 구성 요소, 용량 구성 요소
+t0031,custom_unit_edit, dose components,,smali,p31.smali,5145,개 용량 구성 요소,용량 구성 요소,용량 구성 요소
+t0032,date_picker,Open calendar,,smali,oh1.smali,1217,달력 열기,달력 열기,달력 열기
+t0033,date_picker,Open time picker,,smali,oh1.smali,154,시간 선택기 열기,시간 선택기 열기,시간 선택기 열기
+t0034,dosage_guide,Allergy testing,,smali,jt1.smali,1053,알레르기 반응 확인,알레르기 검사,알레르기 검사
+t0035,dosage_guide,"Dosage refers to the size or amount of an administered psychoactive substance.
+While scales can vary, it can generally be divided into six levels: threshold, light, common, strong, heavy, and overdose (fatal and non-fatal). Each of these levels are associated with a different degree of desired effects and potential side effects, depending on the substance and the individual's physiology.
+In the context of psychonautic or recreational substance use, it is important to understand how dosages work.
+Administering the wrong dosage of a substance can lead to negative experiences such as extreme anxiety, uncomfortable physical side effects, hospitalization, or (in extreme cases) death. Taking too low of a dose can often make people feel uncomfortable and frustrated, which can be dangerous when it leads them to re-dose at higher than the original intended amount, which can result in suddenly intense, overwhelming and potentially dangerous experiences.",,smali,jt1.smali,927,"용량은 사용하는 정신활성 물질의 양을 뜻한다.
+분류 기준은 다를 수 있지만, 일반적으로 역치, 낮음, 일반, 높음, 매우 높음, 과다 사용(치명적인 경우와 그렇지 않은 경우)의 여섯 단계로 나눌 수 있다. 각 단계에서 나타나는 원하는 효과와 잠재적인 부작용의 정도는 물질의 종류와 개인의 생리적 특성에 따라 달라진다.
+의식 탐구나 기분 전환을 목적으로 물질을 사용할 때는 용량이 효과에 미치는 영향을 이해하는 것이 중요하다.
+부적절한 용량을 사용하면 극심한 불안이나 불편한 신체 증상 등 부정적인 경험이 생길 수 있으며, 입원 치료가 필요하거나 극단적인 경우 사망에 이를 수 있다. 용량이 너무 적어도 불편함이나 답답함을 느끼는 경우가 있다. 이로 인해 처음 계획한 양보다 많이 추가로 사용하면, 효과가 갑자기 강해져 감당하기 어렵거나 위험한 경험으로 이어질 수 있다.","용량은 투여된 정신활성 물질의 크기나 양을 뜻합니다.
+분류 기준은 다양할 수 있으나, 일반적으로 역치, 낮음, 일반, 강함, 매우 강함, 과다복용(치명적·비치명적)의 여섯 단계로 나눌 수 있습니다. 각 단계에서 나타나는 원하는 효과와 잠재적 부작용의 정도는 물질의 종류와 개인의 생리적 특성에 따라 달라집니다.
+의식 탐구나 오락적 목적의 물질 사용에서는 용량의 작용 방식을 이해하는 것이 중요합니다.
+부적절한 용량을 투여하면 극심한 불안, 불편한 신체 증상, 입원 치료가 필요하게 되거나 극단적인 경우 사망에 이를 수 있습니다. 용량이 너무 낮을 경우에도 불편함이나 답답함을 느끼게 되어 처음 의도한 양보다 추가로 섭취하게 될 위험이 있으며, 이는 갑작스럽고 압도적이며 잠재적으로 위험한 경험으로 이어질 수 있습니다.","용량은 투여된 정신활성 물질의 크기나 양을 뜻합니다.
+분류 기준은 다양할 수 있으나, 일반적으로 역치, 낮음, 일반, 강함, 매우 강함, 과다복용(치명적·비치명적)의 여섯 단계로 나눌 수 있습니다. 각 단계에서 나타나는 원하는 효과와 잠재적 부작용의 정도는 물질의 종류와 개인의 생리적 특성에 따라 달라집니다.
+의식 탐구나 오락적 목적의 물질 사용에서는 용량의 작용 방식을 이해하는 것이 중요합니다.
+부적절한 용량을 투여하면 극심한 불안, 불편한 신체 증상, 입원 치료가 필요하게 되거나 극단적인 경우 사망에 이를 수 있습니다. 용량이 너무 낮을 경우에도 불편함이나 답답함을 느끼게 되어 처음 의도한 양보다 추가로 섭취하게 될 위험이 있으며, 이는 갑작스럽고 압도적이며 잠재적으로 위험한 경험으로 이어질 수 있습니다."
+t0036,dosage_guide,Eyeballing,,smali,jt1.smali,1089,눈대중으로 양 가늠하기,눈대중으로 가늠하기,눈대중으로 가늠하기
+t0037,dosage_guide,"Eyeballing is strongly discouraged in any context. Eyeballing is a highly inaccurate method of measuring substances which involves looking at a substance and making a rough guess of the weight. Since there is not much difference between 10mg and 30mg visually, it can result in one taking too much of a substance. There are numerous forms of eyeballing methods, including using micro scoops and the graph paper method.
+In the graph paper method, a known quantity of a substance is spread evenly onto a piece of graph paper and one's doses are based on how many graph paper squares are covered. This method is inaccurate simply because the volume of a measured weight of powder can vary significantly in its density, even with different batches of the same substance. For example, two equal-sized piles of mescaline can have completely different densities and therefore different weights.
+Users should not trust a vendor's word that their product weighs a certain amount as it is not unheard of for vendors to accidentally or intentionally give out the wrong amount of a product (both more than advertised or less), which can result in overdoses for some users.
+
+It is especially dangerous to eyeball substances that are active at extremely low doses (under 10mg) and have sensitive dose-response curves.",,smali,jt1.smali,1098,"어떤 상황에서도 눈대중으로 양을 가늠하는 것은 권장하지 않는다. 눈대중은 물질의 겉모습만 보고 무게를 대략 추정하는 매우 부정확한 측정 방식이다. 10mg과 30mg은 눈으로 보기에 큰 차이가 없어 과도한 양을 사용할 수 있다. 작은 계량 스푼이나 모눈종이를 이용하는 방법도 여기에 포함된다.
+모눈종이를 이용하는 방법은 양을 알고 있는 물질을 모눈종이 위에 고르게 펼친 뒤, 차지하는 칸 수로 용량을 나누는 방식이다. 하지만 같은 물질이라도 제조 묶음에 따라 밀도가 달라질 수 있고, 같은 무게의 분말이 차지하는 부피도 크게 달라질 수 있어 부정확하다. 예를 들어 메스칼린 분말 두 더미의 크기가 같아도 밀도가 전혀 달라 무게가 다를 수 있다.
+판매자가 안내한 무게를 그대로 믿어서는 안 된다. 실수로든 의도적으로든 안내한 양보다 많거나 적게 제공하는 경우가 있으며, 이로 인해 일부 사용자는 과도한 양을 사용하게 될 수 있다.
+
+특히 10mg 미만의 극소량에서도 작용하고, 용량이 조금만 달라져도 반응이 크게 변하는 물질은 눈대중으로 양을 가늠하는 것이 더욱 위험하다.","어떤 상황에서도 눈대중으로 양을 가늠하는 것은 강력히 권장하지 않습니다. 눈대중은 물질의 외관만 보고 무게를 대략 추정하는 매우 부정확한 방법입니다. 10mg과 30mg은 겉으로 보기에는 큰 차이가 없어 과도한 양을 복용하게 될 위험이 있습니다. 작은 계량 스푼(micro scoops)이나 모눈종이(graph paper) 방법 등 다양한 눈대중 방식이 존재합니다.
+모눈종이 방식은 알려진 양의 물질을 모눈종이 위에 고르게 펼친 뒤 차지하는 칸 수로 용량을 나누는 방법입니다. 그러나 같은 물질이라도 제조 묶음에 따라 밀도가 크게 달라질 수 있어, 같은 부피라도 무게가 달라질 수 있으므로 부정확합니다. 예를 들어 같은 크기의 메스칼린 두 더미가 밀도 차이로 인해 무게가 완전히 달라질 수 있습니다.
+판매자가 제품 무게를 보증한다고 해서 그대로 믿어서는 안 됩니다. 실수로든 의도적으로든 안내된 양과 다른 양이 제공되는 경우가 드물지 않아 일부 사용자는 이로 인해 과량 복용할 수 있습니다.
+
+특히 10mg 미만에서 작용하고 용량-반응 곡선이 민감한 물질은 눈대중으로 측정하는 것이 매우 위험합니다.","어떤 상황에서도 눈대중으로 양을 가늠하는 것은 강력히 권장하지 않습니다. 눈대중은 물질의 외관만 보고 무게를 대략 추정하는 매우 부정확한 방법입니다. 10mg과 30mg은 겉으로 보기에는 큰 차이가 없어 과도한 양을 복용하게 될 위험이 있습니다. 작은 계량 스푼(micro scoops)이나 모눈종이(graph paper) 방법 등 다양한 눈대중 방식이 존재합니다.
+모눈종이 방식은 알려진 양의 물질을 모눈종이 위에 고르게 펼친 뒤 차지하는 칸 수로 용량을 나누는 방법입니다. 그러나 같은 물질이라도 제조 묶음에 따라 밀도가 크게 달라질 수 있어, 같은 부피라도 무게가 달라질 수 있으므로 부정확합니다. 예를 들어 같은 크기의 메스칼린 두 더미가 밀도 차이로 인해 무게가 완전히 달라질 수 있습니다.
+판매자가 제품 무게를 보증한다고 해서 그대로 믿어서는 안 됩니다. 실수로든 의도적으로든 안내된 양과 다른 양이 제공되는 경우가 드물지 않아 일부 사용자는 이로 인해 과량 복용할 수 있습니다.
+
+특히 10mg 미만에서 작용하고 용량-반응 곡선이 민감한 물질은 눈대중으로 측정하는 것이 매우 위험합니다."
+t0038,dosage_guide,Milligram scales,,smali,jt1.smali,1107,밀리그램 저울,밀리그램 저울,밀리그램 저울
+t0039,dosage_guide,"Most milligram scales are more accurate in higher ranges (5 - 15 grams) than the lower ranges. Therefore, it is better to weigh one's drug while the included calibration weight is on the scale. The following steps outline the weighing method for the most accurate measurement:
+1. Place scale on completely flat surface away from wind and vibrations
+2. Calibrate scale
+3. Add the calibration weight that comes with the scale onto scale without tarring
+4. Add empty gel capsule and mark down weight without tarring
+5. Add the powder into the gel capsule
+6. Mark down weight of filled capsule
+7. Subtract the weight in step 4 from the final weight in step 6
+8. Use volumetric liquid dosing afterwards, especially for very potent drugs (under 10mg)",,smali,jt1.smali,1134,"대부분의 밀리그램 저울은 낮은 무게 범위보다 높은 무게 범위(5~15g)에서 더 정확하다. 따라서 동봉된 교정용 분동을 저울에 올려둔 상태에서 물질의 무게를 재는 편이 좋다. 더 정확하게 측정하기 위한 순서는 다음과 같다.
+1. 바람과 진동이 없는 완전히 평평한 곳에 저울을 놓는다.
+2. 저울을 교정한다.
+3. 동봉된 교정용 분동을 저울에 올린다. 영점 조정은 하지 않는다.
+4. 빈 젤라틴 캡슐을 올리고, 영점 조정 없이 무게를 기록한다.
+5. 캡슐에 분말을 넣는다.
+6. 분말을 채운 캡슐의 무게를 기록한다.
+7. 6단계의 최종 무게에서 4단계에 기록한 무게를 뺀다.
+8. 이후에는 액체의 부피로 용량을 계량하는 방법을 사용한다. 특히 10mg 미만에서도 강하게 작용하는 물질은 이 방법이 중요하다.","대부분의 밀리그램 저울은 낮은 무게 범위보다 높은 무게 범위(5~15 g)에서 더 정확합니다. 따라서 동봉된 교정용 분동을 저울에 올려둔 상태에서 물질을 계량하는 것이 더 낫습니다. 가장 정확한 측정을 위한 방법은 다음과 같습니다:
+1. 바람과 진동이 없는 완전히 평평한 곳에 저울을 놓으세요.
+2. 저울을 교정하세요.
+3. 동봉된 교정용 분동을 저울에 올리되 영점 조정(타르)은 하지 마세요.
+4. 빈 젤라틴 캡슐을 올리고 영점 조정 없이 무게를 기록하세요.
+5. 캡슐에 분말을 넣으세요.
+6. 분말을 채운 캡슐의 무게를 기록하세요.
+7. 6단계의 최종 무게에서 4단계에서 기록한 무게를 빼세요.
+8. 이후에는 특히 10mg 미만의 매우 강력한 물질에 대해 액체의 부피로 용량을 계량하는(volumetric liquid dosing) 방법을 사용하세요.","대부분의 밀리그램 저울은 낮은 무게 범위보다 높은 무게 범위(5~15 g)에서 더 정확합니다. 따라서 동봉된 교정용 분동을 저울에 올려둔 상태에서 물질을 계량하는 것이 더 낫습니다. 가장 정확한 측정을 위한 방법은 다음과 같습니다:
+1. 바람과 진동이 없는 완전히 평평한 곳에 저울을 놓으세요.
+2. 저울을 교정하세요.
+3. 동봉된 교정용 분동을 저울에 올리되 영점 조정(타르)은 하지 마세요.
+4. 빈 젤라틴 캡슐을 올리고 영점 조정 없이 무게를 기록하세요.
+5. 캡슐에 분말을 넣으세요.
+6. 분말을 채운 캡슐의 무게를 기록하세요.
+7. 6단계의 최종 무게에서 4단계에서 기록한 무게를 빼세요.
+8. 이후에는 특히 10mg 미만의 매우 강력한 물질에 대해 액체의 부피로 용량을 계량하는(volumetric liquid dosing) 방법을 사용하세요."
+t0040,dosage_guide,"Some people, especially those with health issues or over-reactive immune systems, may have adverse or allergic reactions to substances such as uncomfortable physical or cognitive effects, or over-sensitivity. The best way to prevent this is to perform an allergy test with every new batch of a substance the user receives (even if coming from a reliable source, as sometimes much more potent and dangerous compounds can become unintentionally mixed up with the product being advertised).
+To properly perform an allergy test, one can simply dose a minuscule amount of the substance (1/6 of a regular dose) and then wait several hours to a few days.
+When performing an allergy test, one should note any unusual side effects including rashes, hives, breathing discomfort, an uncomfortably fast heartbeat, or a burning sensation on one's skin. Depending on the severity of symptoms, medical services may be needed.",,smali,jt1.smali,1062,"일부 사람은 물질에 대해 불편한 신체적·인지적 증상이나 과민 반응 등 이상 반응 또는 알레르기 반응을 보일 수 있다. 건강 문제가 있거나 면역계가 과도하게 반응하는 경우에는 특히 그렇다. 이를 예방하는 가장 좋은 방법은 새로 받은 물질마다 알레르기 반응을 확인하는 것이다. 신뢰할 만한 곳에서 받은 경우에도 마찬가지다. 안내된 제품에 훨씬 강력하고 위험한 화합물이 의도치 않게 섞이거나, 다른 물질로 바뀌는 일이 있을 수 있기 때문이다.
+알레르기 반응을 확인하려면 아주 적은 양(일반적인 용량의 1/6)을 사용한 뒤 몇 시간에서 며칠 동안 기다린다.
+이때 발진, 두드러기, 호흡 불편, 불편할 정도로 빠른 심장 박동, 피부가 타는 듯한 느낌 등 평소와 다른 증상이 있는지 살펴야 한다. 증상이 심하면 의료 지원이 필요할 수 있다.","일부 사람들, 특히 건강 문제가 있거나 면역계가 과도하게 반응하는 사람들은 불편한 신체적·인지적 증상이나 과민 반응 등 물질에 대한 이상 반응이나 알레르기 반응을 보일 수 있습니다. 이를 예방하는 가장 좋은 방법은 사용자가 새 배치의 물질을 받을 때마다 알레르기 검사를 하는 것입니다(신뢰할 수 있는 출처에서 받은 경우에도 마찬가지입니다. 때로는 훨씬 더 강력하고 위험한 화합물이 의도치 않게 광고된 제품에 섞이는 경우가 있습니다).
+알레르기 검사를 올바르게 수행하려면 일반적인 용량의 1/6 정도인 극미량을 섭취한 뒤 몇 시간에서 며칠간 관찰하세요.
+검사하는 동안 발진, 두드러기, 호흡 곤란, 불편할 정도로 빠른 심박, 피부가 타는 듯한 느낌 등 평소와 다른 증상이 있는지 기록하세요. 증상의 심각도에 따라 의료 서비스가 필요할 수 있습니다.","일부 사람들, 특히 건강 문제가 있거나 면역계가 과도하게 반응하는 사람들은 불편한 신체적·인지적 증상이나 과민 반응 등 물질에 대한 이상 반응이나 알레르기 반응을 보일 수 있습니다. 이를 예방하는 가장 좋은 방법은 사용자가 새 배치의 물질을 받을 때마다 알레르기 검사를 하는 것입니다(신뢰할 수 있는 출처에서 받은 경우에도 마찬가지입니다. 때로는 훨씬 더 강력하고 위험한 화합물이 의도치 않게 광고된 제품에 섞이는 경우가 있습니다).
+알레르기 검사를 올바르게 수행하려면 일반적인 용량의 1/6 정도인 극미량을 섭취한 뒤 몇 시간에서 며칠간 관찰하세요.
+검사하는 동안 발진, 두드러기, 호흡 곤란, 불편할 정도로 빠른 심박, 피부가 타는 듯한 느낌 등 평소와 다른 증상이 있는지 기록하세요. 증상의 심각도에 따라 의료 서비스가 필요할 수 있습니다."
+t0041,dosage_guide,"The range and intensity of the effects of a substance depends on upon a number of factors. These include route of administration, dosage, set and setting, and personal and environmental factors.
+Effective doses can be divided into five categories: threshold, light, common, strong, and heavy.",,smali,jt1.smali,1267,"물질의 효과가 나타나는 범위와 강도는 여러 요인에 따라 달라진다. 사용 경로, 용량, 심리 상태와 주변 환경, 그 밖의 개인적·환경적 요인이 여기에 포함된다.
+효과가 나타나는 용량은 역치, 낮음, 일반, 높음, 매우 높음의 다섯 단계로 나눌 수 있다.","물질의 효과 범위와 강도는 여러 요인에 따라 달라집니다. 여기에는 사용 경로, 용량, 심리 상태와 주변 환경 및 개인적·환경적 요인이 포함됩니다.
+효과적인 용량은 역치, 낮음, 일반, 강함, 매우 강함의 다섯 단계로 나눌 수 있습니다.","물질의 효과 범위와 강도는 여러 요인에 따라 달라집니다. 여기에는 사용 경로, 용량, 심리 상태와 주변 환경 및 개인적·환경적 요인이 포함됩니다.
+효과적인 용량은 역치, 낮음, 일반, 강함, 매우 강함의 다섯 단계로 나눌 수 있습니다."
+t0042,dosage_guide,"There are various ways in which users measure their dosages of psychoactive substances. The most accurate and safe method to measure one's drugs is to use a combination of a milligram scale and the volumetric liquid dosing method. This is a vastly far safer route than ""eyeballing"" one's dosages by approximating the weight of what they are ingesting simply by looking at it and making a rough (but inaccurate) guess.",,smali,jt1.smali,1080,정신활성 물질의 용량을 재는 방법은 여러 가지다. 가장 정확하고 안전하게 계량하는 방법은 밀리그램 저울과 액체의 부피로 용량을 계량하는 방법을 함께 사용하는 것이다. 물질의 겉모습만 보고 무게를 대략적이고 부정확하게 추정하는 ‘눈대중’보다 훨씬 안전한 방법이다.,정신활성 물질의 용량을 재는 방법은 여러 가지가 있습니다. 가장 정확하고 안전한 방법은 밀리그램 저울과 부피 기반 액체 계량법을 함께 사용하는 것입니다. 물질을 눈으로 보고 무게를 대략 추정하는 ‘눈대중’ 방식보다 훨씬 안전합니다.,정신활성 물질의 용량을 재는 방법은 여러 가지가 있습니다. 가장 정확하고 안전한 방법은 밀리그램 저울과 부피 기반 액체 계량법을 함께 사용하는 것입니다. 물질을 눈으로 보고 무게를 대략 추정하는 ‘눈대중’ 방식보다 훨씬 안전합니다.
+t0043,dosage_guide,Weighing technique,,smali,jt1.smali,1125,무게 측정 방법,무게 측정,무게 측정
+t0044,drugs_screen,Canberra,,smali,xv0.smali,175,캔버라,캔버라,캔버라
+t0045,drugs_screen,Drogenarbeit Z6,,smali,xv0.smali,320,Drogenarbeit Z6,Drogenarbeit Z6,Drogenarbeit Z6
+t0046,drugs_screen,Graz,,smali,xv0.smali,380,그라츠,그라츠,그라츠
+t0047,drugs_screen,Innsbruck,,smali,xv0.smali,312,인스브루크,인스브루크,인스브루크
+t0048,drugs_screen,Note that this will not link any of the new substances to ingestions that you already have. It will create new substances even if you already have ones with the same name.,,smali,xv0.smali,3202,새로 추가되는 물질은 기존 사용 기록과 연결되지 않는다. 같은 이름의 물질이 이미 있어도 별도의 물질로 생성된다.,이 작업은 새로 추가되는 물질을 이미 보유한 섭취 기록과 연결하지 않습니다. 같은 이름의 물질이 이미 있어도 별개의 물질로 생성됩니다.,이 작업은 새로 추가되는 물질을 이미 보유한 섭취 기록과 연결하지 않습니다. 같은 이름의 물질이 이미 있어도 별개의 물질로 생성됩니다.
+t0049,drugs_screen,Queensland,,smali,xv0.smali,221,퀸즐랜드,퀸즐랜드,퀸즐랜드
+t0050,drugs_screen,Triptalks,,smali,xv0.smali,388,Triptalks,Triptalks,Triptalks
+t0051,drugs_screen,Vienna,,smali,xv0.smali,358,빈,Vienna,Vienna
+t0052,experience_edit,Close,,smali,hw0.smali,686,닫기,닫기,닫기
+t0053,experience_edit,Consumer,,smali,fw0.smali,3229,사용한 사람,섭취자,섭취자
+t0054,experience_edit,Delete dose & duration,,smali,fw0.smali,2587,용량 및 지속 시간 삭제,용량 및 지속 시간 삭제,용량 및 지속 시간 삭제
+t0055,experience_edit,Done icon,,smali,fw0.smali,1733,완료 아이콘,완료 아이콘,완료 아이콘
+t0056,experience_edit,Edit Dose & Duration,,smali,fw0.smali,2677,용량 및 지속 시간 수정,용량 및 지속 시간 수정,용량 및 지속 시간 수정
+t0057,experience_edit,Export,,smali,hw0.smali,1161,내보내기,내보내기,내보내기
+t0058,ingestion_edit, · Installed,,smali,pw0.smali,1055, · 설치됨, · 설치됨, · 설치됨
+t0059,misc,"Blow your nose before sniffling and for about 10 minutes afterwards! The nasal septum, nasal mucous membranes and olfactory cells can be severely irritated and dried out by sniffing and this can lead to inflammation, boils and even dead tissue on the nasal septum. That is why you should rinse your nose after consumption or at the latest the next day and care for it with a moisturising/fatty cream.",,smali,rw0.smali,4320,"코로 흡입하기 전과 흡입하고 약 10분 뒤에 코를 풀어야 한다. 코로 흡입하면 비중격, 코점막, 후각세포가 심하게 자극받고 건조해질 수 있으며, 염증이나 종기가 생기거나 비중격 조직이 괴사할 수도 있다. 따라서 사용 후, 늦어도 다음 날에는 코를 세척하고 보습 크림이나 유분이 있는 크림으로 관리해야 한다.","코로 흡입하기 전과 흡입한 뒤 약 10분간은 자주 코를 풀어주세요. 코로 흡입하면 비중격(코 가운데 칸막이), 비점막 및 후각세포가 심하게 자극되고 건조해질 수 있으며, 이로 인해 염증·종기 또는 심한 경우 비중격 조직 괴사가 발생할 수 있습니다. 따라서 섭취 후, 늦어도 다음 날까지는 코를 세척하고 보습성 또는 유분이 있는 크림으로 관리하세요.","코로 흡입하기 전과 흡입한 뒤 약 10분간은 자주 코를 풀어주세요. 코로 흡입하면 비중격(코 가운데 칸막이), 비점막 및 후각세포가 심하게 자극되고 건조해질 수 있으며, 이로 인해 염증·종기 또는 심한 경우 비중격 조직 괴사가 발생할 수 있습니다. 따라서 섭취 후, 늦어도 다음 날까지는 코를 세척하고 보습성 또는 유분이 있는 크림으로 관리하세요."
+t0060,misc,Import,,smali,wv0.smali,2323,가져오기,가져오기,가져오기
+t0061,ota,  NEW UPDATE  ,,smali,com/isaakhanimann/journal/ota/OtaUpdater.smali,1986,  새 업데이트  ,새 업데이트,새 업데이트
+t0062,ota,Accept,,smali,com/isaakhanimann/journal/ota/OtaUpdater.smali,221,동의,수락,수락
+t0063,preferences,Last ingestion in ,,smali,bg0.smali,28506,마지막 사용까지 ,마지막 섭취 기록까지 ,마지막 섭취 기록까지 
+t0064,preferences,Last ingestion was ,,smali,bg0.smali,28466,마지막 사용: ,마지막 섭취 기록: ,마지막 섭취 기록: 
+t0065,preferences,Notes,,smali,bg0.smali,30442,메모,메모,메모
+t0066,preferences,Start is in ,,smali,bg0.smali,302,시작까지 ,시작까지 ,시작까지 
+t0067,premium, more substances without premium.,,smali,kc.smali,1140,개를 더 기록할 수 있다.,개의 물질을 더 기록할 수 있습니다.,개의 물질을 더 기록할 수 있습니다.
+t0068,premium,You can still log ,,smali,kc.smali,1126,프리미엄 없이도 물질 ,프리미엄 없이도 ,프리미엄 없이도 
+t0069,relative_time,just now,,smali,xb4.smali,12376,방금,방금,방금
+t0070,safer_sniffing,Keyboard,,smali,pv0.smali,2388,키보드,키보드,키보드
+t0071,safer_sniffing,Next,,smali,pv0.smali,1059,다음,다음,다음
+t0072,safer_sniffing,This guide is provided for educational and harm reduction purposes only and we strongly discourage users from engaging in this activity.,,smali,pv0.smali,352,이 안내는 교육과 위해 감소만을 목적으로 제공된다. 해당 행위는 하지 않을 것을 강력히 권고한다.,"이 안내서는 교육 및 위해 감소 목적의 정보로만 제공되며, 이러한 행위에 참여하지 않을 것을 강력히 권고합니다.","이 안내서는 교육 및 위해 감소 목적의 정보로만 제공되며, 이러한 행위에 참여하지 않을 것을 강력히 권고합니다."
+t0073,safer_sniffing,Units,,smali,pv0.smali,901,단위,단위,단위
+t0074,safer_sniffing,Using and sharing injection equipment is an extremely high-risk activity and is never truly safe to do in a non-medical context.,,smali,pv0.smali,267,"주사 도구를 사용하거나 공유하는 것은 위험성이 매우 높으며, 의료 목적이 아닌 상황에서는 결코 안전하다고 할 수 없다.","주사 기구를 사용하거나 공유하는 행위는 위험도가 매우 높으며, 의료 목적이 아닌 상황에서는 결코 안전하지 않습니다.","주사 기구를 사용하거나 공유하는 행위는 위험도가 매우 높으며, 의료 목적이 아닌 상황에서는 결코 안전하지 않습니다."
+t0075,safer_use,Anchors,,smali,rv0.smali,5216,현실감을 유지하는 수단,현실감 유지 수단,현실감 유지 수단
+t0076,safer_use,Article,,smali,rv0.smali,886,문서,문서,문서
+t0077,safer_use,"Consider how long you want to stay awake. Don't suppress your need for sleep.
+
+Drink enough non-alcoholic drinks (3 - 5 dl per hour) and take breaks in the fresh air.
+
+Eat healthy before and after consumption and do not consume on an empty stomach.
+
+People with psychological disorders, pre-existing cardiovascular conditions, asthma, liver and kidney disorders or diabetes, hyperthyroidism and pregnant women are particulary discouraged from taking stimulants.
+
+Take vitamin C and D and minerals (iron, calcium and magnesium) with frequent use.
+
+It is better not to wear headgear (danger of overheating).",,smali,rv0.smali,4312,"얼마나 오래 깨어 있을지 생각해야 한다. 잠이 필요하다는 몸의 신호를 억누르지 않아야 한다.
+
+술이 아닌 음료를 충분히 마시고(시간당 300~500mL), 신선한 공기를 마시며 쉬는 시간을 가져야 한다.
+
+사용 전후에는 균형 잡힌 식사를 하고, 빈속에 사용하지 않아야 한다.
+
+정신건강 문제, 기존 심혈관 질환, 천식, 간·신장 질환, 당뇨병, 갑상선기능항진증이 있거나 임신 중인 경우에는 특히 각성제 사용을 삼가는 것이 좋다.
+
+자주 사용하는 경우에는 비타민 C·D와 무기질(철분, 칼슘, 마그네슘)을 섭취해야 한다.
+
+체온이 지나치게 높아질 위험이 있으므로 모자 등 머리를 덮는 물건은 착용하지 않는 편이 좋다.","얼마나 오래 깨어 있을지 미리 고려하세요. 잠이 필요하다는 신호를 억누르지 마세요.
+
+술이 아닌 음료를 충분히 마시고(시간당 3–5 dl(300–500 mL)), 신선한 공기를 마시며 휴식을 취하세요.
+
+섭취 전·후에는 균형 잡힌 식사를 하고 빈속에 섭취하지 마세요.
+
+정신 질환, 기존 심혈관 질환, 천식, 간·신장 질환, 당뇨병, 갑상선 기능 항진증이 있거나 임신 중인 경우에는 특히 각성제 섭취를 삼가세요.
+
+자주 사용하는 경우에는 비타민 C·D와 미네랄(철분, 칼슘, 마그네슘)을 섭취하세요.
+
+과열 위험이 있으므로 모자 등 머리를 덮는 것은 피하는 것이 좋습니다.","얼마나 오래 깨어 있을지 미리 고려하세요. 잠이 필요하다는 신호를 억누르지 마세요.
+
+술이 아닌 음료를 충분히 마시고(시간당 3–5 dl(300–500 mL)), 신선한 공기를 마시며 휴식을 취하세요.
+
+섭취 전·후에는 균형 잡힌 식사를 하고 빈속에 섭취하지 마세요.
+
+정신 질환, 기존 심혈관 질환, 천식, 간·신장 질환, 당뇨병, 갑상선 기능 항진증이 있거나 임신 중인 경우에는 특히 각성제 섭취를 삼가세요.
+
+자주 사용하는 경우에는 비타민 C·D와 미네랄(철분, 칼슘, 마그네슘)을 섭취하세요.
+
+과열 위험이 있으므로 모자 등 머리를 덮는 것은 피하는 것이 좋습니다."
+t0078,safer_use,Powder is not just powder,,smali,rv0.smali,4768,가루라고 다 같은 가루는 아니다,가루는 모두 같지 않습니다.,가루는 모두 같지 않습니다.
+t0079,safer_use,PsychonautWiki eye,,smali,a2.smali,3030,PsychonautWiki 눈 모양 로고,PsychonautWiki 눈 로고,PsychonautWiki 눈 로고
+t0080,safer_use,Setting,,smali,rv0.smali,5164,주변 환경,주변 환경,주변 환경
+t0081,settings,"Always use your personal sniffing utensil (sniffing tube or sniffing utensil). Do not share utensils as this is unhygienic and can transmit diseases. Banknotes are not suitable as they are often carriers of bacteria and viruses (they pass through many hands) and are sometimes printed with inks containing heavy metals. Hard plastic tubes carry the risk of a nose injury (sharp edge), the same applies to thin paper. Non-printed, slightly thicker paper (100 mg) with a smooth surface is best.",,smali,iw0.smali,188,"코로 흡입할 때는 반드시 개인용 도구를 사용해야 한다. 도구를 공유하면 비위생적일 뿐 아니라 감염병이 전파될 수 있다. 지폐는 여러 사람의 손을 거쳐 세균과 바이러스가 묻어 있는 경우가 많고, 중금속이 포함된 잉크로 인쇄되기도 하므로 적합하지 않다. 단단한 플라스틱 관은 가장자리가 날카로워 코를 다칠 수 있으며, 얇은 종이도 마찬가지다. 인쇄되지 않고 표면이 매끄러우며 약간 두꺼운 종이(100mg)가 가장 적합하다.","항상 개인용 흡입 도구(스니핑 튜브 등)를 사용하세요. 도구를 공유하면 비위생적일 뿐만 아니라 감염병이 전파될 수 있습니다. 지폐는 여러 사람의 손을 거쳐 세균과 바이러스를 옮기는 경우가 많고, 때로는 중금속이 포함된 잉크로 인쇄되기도 하므로 적합하지 않습니다. 단단한 플라스틱 관은 가장자리가 날카로워 코를 다칠 위험이 있고, 얇은 종이도 마찬가지입니다. 인쇄되지 않았고 표면이 매끄러우며 약간 두꺼운 종이(100 mg)가 가장 적합합니다.","항상 개인용 흡입 도구(스니핑 튜브 등)를 사용하세요. 도구를 공유하면 비위생적일 뿐만 아니라 감염병이 전파될 수 있습니다. 지폐는 여러 사람의 손을 거쳐 세균과 바이러스를 옮기는 경우가 많고, 때로는 중금속이 포함된 잉크로 인쇄되기도 하므로 적합하지 않습니다. 단단한 플라스틱 관은 가장자리가 날카로워 코를 다칠 위험이 있고, 얇은 종이도 마찬가지입니다. 인쇄되지 않았고 표면이 매끄러우며 약간 두꺼운 종이(100 mg)가 가장 적합합니다."
+t0082,settings,An item of clothing or an accessory that is only worn during and therefore associated with the act of tripping.,,smali,iw0.smali,1075,트립 중에만 착용하여 그 경험과 연결되는 옷이나 액세서리.,트립 중에만 착용하여 그 경험과 연관되는 의복 또는 액세서리,트립 중에만 착용하여 그 경험과 연관되는 의복 또는 액세서리
+t0083,settings,"Avoid people who are not directly participating in the experience. This includes relatives who may be sleeping in the same house and friends that are anything but extremely trustworthy, understanding, and informed about the effects of hallucinogens. The mere vicinity of unaware people can prompt anxiety and paranoia as well as prevent full immersion in the experience.",,smali,iw0.smali,2064,"경험에 직접 참여하지 않는 사람과의 접촉은 피해야 한다. 같은 집에서 잠을 자는 가족이나, 충분히 신뢰할 수 없거나 이해심이 부족하거나 환각제의 효과를 잘 모르는 친구도 포함된다. 상황을 모르는 사람이 가까이 있다는 사실만으로도 불안이나 편집적인 생각이 생길 수 있고, 경험에 온전히 몰입하기 어려워질 수 있다.","경험에 직접 참여하지 않는 사람과의 접촉은 피하세요. 같은 집에서 잠을 자는 가족이나, 충분히 신뢰할 수 없거나 이해심이 부족하거나 환각제의 효과를 잘 모르는 친구도 포함됩니다. 상황을 모르는 사람이 근처에 있으면 불안이나 편집적 사고가 촉발되거나 경험에 온전히 몰입하기 어려워질 수 있습니다.","경험에 직접 참여하지 않는 사람과의 접촉은 피하세요. 같은 집에서 잠을 자는 가족이나, 충분히 신뢰할 수 없거나 이해심이 부족하거나 환각제의 효과를 잘 모르는 친구도 포함됩니다. 상황을 모르는 사람이 근처에 있으면 불안이나 편집적 사고가 촉발되거나 경험에 온전히 몰입하기 어려워질 수 있습니다."
+t0084,settings,"Avoid sources of anything that can generate ""bad vibes."" The user should not expose themselves to unpleasant or disturbing stimuli such as scary films or dark music. If bad vibes are encompassing the experience, they can be escaped by quickly changing the immediate environment the user is in. For example, if one is sitting down with the lights off, stand up and turn the lights on, change the music, or move to a different room in the house.",,smali,iw0.smali,2056,"불안하거나 불쾌한 분위기를 만드는 요소를 피해야 한다. 무서운 영화나 어두운 분위기의 음악처럼 불편하거나 심란하게 만드는 자극에 노출되지 않는 것이 좋다. 이런 분위기가 경험 전체를 지배한다면 주변 환경을 빠르게 바꿔 벗어날 수 있다. 예를 들어 불을 끄고 앉아 있었다면 일어나 불을 켜거나, 음악을 바꾸거나, 집 안의 다른 방으로 이동하는 방법이 있다.","불쾌하거나 불안한 분위기를 유발할 수 있는 요소를 피하세요. 무서운 영화나 어두운 분위기의 음악처럼 불편하거나 심란한 자극에 노출되지 않는 것이 좋습니다. 이러한 분위기가 경험 전체를 지배한다면 즉시 주변 환경을 바꿔 벗어날 수 있습니다. 예를 들어 불을 끄고 앉아 있다면 일어나 불을 켜고, 음악을 바꾸거나 집 안의 다른 방으로 이동해 보세요.","불쾌하거나 불안한 분위기를 유발할 수 있는 요소를 피하세요. 무서운 영화나 어두운 분위기의 음악처럼 불편하거나 심란한 자극에 노출되지 않는 것이 좋습니다. 이러한 분위기가 경험 전체를 지배한다면 즉시 주변 환경을 바꿔 벗어날 수 있습니다. 예를 들어 불을 끄고 앉아 있다면 일어나 불을 켜고, 음악을 바꾸거나 집 안의 다른 방으로 이동해 보세요."
+t0085,settings,"Avoid unfamiliar, loud, cluttered, and/or public environments. The user should select an environment over which they have a considerable degree of control. This can be as simple as having the ability to adjust the air conditioning settings or freely enter and exit a restroom. One should be able to sit, lie down, and walk around as they please for the full duration of the experience. The chosen setting should ideally be equipped with privacy, relaxing music, comfortable seating, and readily available food and water. Examples of such settings include a safe, comfortable room at home or a friend's house.",,smali,iw0.smali,2052,"낯설거나 시끄럽거나 어수선한 장소, 공공장소는 피해야 한다. 주변 조건을 충분히 조절할 수 있는 환경을 선택하는 것이 좋다. 냉난방을 조절하거나 화장실에 자유롭게 드나들 수 있는 것처럼 간단한 조건도 중요하다. 경험이 지속되는 동안 원하는 대로 앉거나 눕거나 걸어 다닐 수 있어야 한다. 사생활이 보장되고, 편안한 음악과 좌석이 있으며, 음식과 물을 쉽게 구할 수 있는 환경이 이상적이다. 집이나 친구 집의 안전하고 편안한 방이 그 예다.","낯설거나 시끄럽거나 어수선한 장소, 또는 공공장소는 피하세요. 사용자가 상당한 정도로 통제할 수 있는 환경을 선택해야 합니다. 냉난방을 조절하거나 화장실을 자유롭게 드나들 수 있는 것처럼 간단한 조건도 중요합니다. 경험이 지속되는 동안 원하는 대로 앉거나 눕거나 걸을 수 있어야 합니다. 사생활이 보장되고 편안한 음악과 좌석이 있으며 음식과 물을 쉽게 구할 수 있는 환경이 이상적입니다. 집이나 친구 집의 안전하고 편안한 방이 그 예입니다.","낯설거나 시끄럽거나 어수선한 장소, 또는 공공장소는 피하세요. 사용자가 상당한 정도로 통제할 수 있는 환경을 선택해야 합니다. 냉난방을 조절하거나 화장실을 자유롭게 드나들 수 있는 것처럼 간단한 조건도 중요합니다. 경험이 지속되는 동안 원하는 대로 앉거나 눕거나 걸을 수 있어야 합니다. 사생활이 보장되고 편안한 음악과 좌석이 있으며 음식과 물을 쉽게 구할 수 있는 환경이 이상적입니다. 집이나 친구 집의 안전하고 편안한 방이 그 예입니다."
+t0086,settings,"Choosing a suitable place to experience the effects of a hallucinogen is extremely important and plays a major role in determining the outcome of the experience. The ideal place for an inexperienced user is a familiar, safe, indoor environment over which they have full control and is devoid of factors that can negatively influence one's mental state. In order to prepare a proper setting for hallucinogens, it is advised to take the following steps:",,smali,iw0.smali,2043,"환각제의 효과를 경험할 장소를 적절히 선택하는 것은 매우 중요하며, 경험의 결과에 큰 영향을 미친다. 경험이 적은 사람에게 이상적인 장소는 익숙하고 안전한 실내 공간으로, 환경을 온전히 조절할 수 있고 심리 상태에 부정적인 영향을 줄 요소가 없는 곳이다. 환각제 사용 환경을 준비할 때는 다음 사항을 고려하는 것이 좋다.","환각제의 효과를 경험할 장소를 적절히 선택하는 것은 매우 중요하며, 경험의 결과에 큰 영향을 미칩니다. 경험이 적은 사람에게 이상적인 장소는 익숙하고 안전한 실내 공간으로, 환경을 온전히 조절할 수 있고 심리 상태에 부정적인 영향을 줄 요소가 없는 곳입니다. 환각제 사용 환경을 준비할 때는 다음 사항을 고려하는 것이 좋습니다.","환각제의 효과를 경험할 장소를 적절히 선택하는 것은 매우 중요하며, 경험의 결과에 큰 영향을 미칩니다. 경험이 적은 사람에게 이상적인 장소는 익숙하고 안전한 실내 공간으로, 환경을 온전히 조절할 수 있고 심리 상태에 부정적인 영향을 줄 요소가 없는 곳입니다. 환각제 사용 환경을 준비할 때는 다음 사항을 고려하는 것이 좋습니다."
+t0087,settings,Done,,smali,iw0.smali,3994,완료,완료,완료
+t0088,settings,"Ensure that one is completely free of responsibilities for the duration of the experience, and ideally the day after. This is because even the simplest of tasks can become incredibly difficult and potentially stressful to perform while under the influence of hallucinogens. The user should be prepared to fully relax and not perform chores or everyday routines. This includes driving and operating heavy machinery.",,smali,iw0.smali,2060,"경험이 지속되는 동안에는 해야 할 일이 전혀 없도록 하고, 가능하면 다음 날 일정도 비워 두어야 한다. 환각제의 영향을 받는 동안에는 아주 간단한 일조차 매우 어렵거나 스트레스를 유발할 수 있기 때문이다. 집안일이나 일상적인 할 일을 하지 않고 충분히 쉴 수 있도록 준비해야 한다. 운전이나 중장비 조작도 해서는 안 된다.","경험이 지속되는 동안에는 책임이 전혀 없도록 하고, 가능하면 다음 날 일정도 비워 두세요. 환각제의 영향 하에서는 아주 간단한 일조차 매우 어렵거나 스트레스를 유발할 수 있기 때문입니다. 집안일이나 일상적인 할 일을 하지 않고 충분히 쉴 수 있도록 준비해야 합니다. 운전이나 중장비 조작도 해서는 안 됩니다.","경험이 지속되는 동안에는 책임이 전혀 없도록 하고, 가능하면 다음 날 일정도 비워 두세요. 환각제의 영향 하에서는 아주 간단한 일조차 매우 어렵거나 스트레스를 유발할 수 있기 때문입니다. 집안일이나 일상적인 할 일을 하지 않고 충분히 쉴 수 있도록 준비해야 합니다. 운전이나 중장비 조작도 해서는 안 됩니다."
+t0089,settings,"Familiar and uplifting music. An example of this includes our community good vibes portal. However, users are encouraged to create their own playlist that is composed of music one personally associates with being happy and relaxed.",,smali,iw0.smali,1079,"익숙하고 기분을 밝게 해 주는 음악. 커뮤니티의 ‘Good Vibes’ 페이지를 참고할 수 있다. 다만, 행복하고 편안한 기분과 연결되는 음악을 직접 골라 자신만의 재생목록을 만드는 것이 좋다.","익숙하고 기분을 밝게 해 주는 음악. 커뮤니티의 Good Vibes 포털을 참고할 수 있습니다. 다만, 자신이 행복하고 편안하다고 느끼는 음악으로 구성한 재생목록을 직접 만드는 것을 권장합니다.","익숙하고 기분을 밝게 해 주는 음악. 커뮤니티의 Good Vibes 포털을 참고할 수 있습니다. 다만, 자신이 행복하고 편안하다고 느끼는 음악으로 구성한 재생목록을 직접 만드는 것을 권장합니다."
+t0090,settings,"Hallucinogens have the potential to become overwhelming and push the user into a paranoid or dreadful mood, particularly if they are inexperienced or in an inappropriate set and setting.
+If one decides to terminate the trip, benzodiazepines and other sedatives such as some antipsychotics can be considered analogous to an ""eject button"" of a downhill-headed or extensively long trip. These substances tend to be very effective tools in preventing panic attacks, paranoia, and possible traumatic experiences.
+However, experienced users generally advise trying to wait out difficult parts of a trip if possible. Challenging moments are often temporary and can turn out to be catalysts for the greatest learning experiences.",,smali,iw0.smali,820,"환각제의 효과는 감당하기 어려워질 수 있으며, 편집적인 생각이나 극심한 두려움을 유발할 수 있다. 특히 경험이 적거나 심리 상태와 주변 환경이 적절하지 않은 경우에 그렇다.
+트립을 끝내기로 했다면 벤조디아제핀계 약물이나 일부 항정신병약 같은 진정 작용이 있는 약물을, 악화되거나 지나치게 길어진 트립에서 벗어나는 ‘탈출 버튼’에 비유할 수 있다. 이러한 물질은 공황 발작, 편집적인 생각, 심리적 외상으로 남을 수 있는 경험을 예방하는 데 매우 효과적인 수단으로 여겨진다.
+다만 경험이 많은 사람들은 가능하다면 힘든 구간이 지나가기를 기다려 보라고 조언하는 경우가 많다. 어려운 순간은 일시적인 경우가 많고, 때로는 큰 배움으로 이어지는 계기가 되기도 한다.","환각제의 효과는 감당하기 어려울 정도로 강해져 편집적이거나 극심한 공포 상태로 빠질 수 있으며, 특히 경험이 적거나 심리 상태와 주변 환경이 적절하지 않을 때 그럴 가능성이 큽니다.
+트립을 종료하기로 결정했다면 벤조디아제핀계 약물이나 일부 항정신병약처럼 진정 작용이 있는 약물을, 악화되었거나 지나치게 길어진 트립에서 벗어나는 ‘탈출 버튼’으로 고려할 수 있습니다. 이러한 물질은 공황 발작, 편집적 사고, 심리적 외상으로 이어질 수 있는 경험을 예방하는 데 매우 효과적입니다.
+다만 경험이 많은 사용자들은 가능하다면 힘든 구간을 기다려 보라고 조언하는 경우가 많습니다. 어려운 순간은 일시적인 경우가 많고, 때로는 큰 배움으로 이어지는 계기가 되기도 합니다.","환각제의 효과는 감당하기 어려울 정도로 강해져 편집적이거나 극심한 공포 상태로 빠질 수 있으며, 특히 경험이 적거나 심리 상태와 주변 환경이 적절하지 않을 때 그럴 가능성이 큽니다.
+트립을 종료하기로 결정했다면 벤조디아제핀계 약물이나 일부 항정신병약처럼 진정 작용이 있는 약물을, 악화되었거나 지나치게 길어진 트립에서 벗어나는 ‘탈출 버튼’으로 고려할 수 있습니다. 이러한 물질은 공황 발작, 편집적 사고, 심리적 외상으로 이어질 수 있는 경험을 예방하는 데 매우 효과적입니다.
+다만 경험이 많은 사용자들은 가능하다면 힘든 구간을 기다려 보라고 조언하는 경우가 많습니다. 어려운 순간은 일시적인 경우가 많고, 때로는 큰 배움으로 이어지는 계기가 되기도 합니다."
+t0091,settings,"In the context of hallucinogen use, an anchor is an activity or physical object which keeps the user grounded during the heavy distortion of a person's sense of time, space, memory, and sense of self. At higher dosages, this can result in extreme disorientation and confusion. Anchors are often used to counteract this and maintain one's concept of the current situation as it is within reality.",,smali,iw0.smali,1053,"환각제 사용에서 ‘현실감을 유지하는 수단’은 시간, 공간, 기억, 자아 감각이 크게 왜곡될 때 현실감을 붙잡아 주는 활동이나 물건을 뜻한다. 용량이 높으면 현재 상황이나 자신의 위치를 파악하기 매우 어려워지고 혼란이 심해질 수 있다. 이러한 수단은 혼란을 줄이고 지금 실제로 어떤 상황에 있는지 인식하는 데 사용된다.","환각제 사용에서 앵커(현실감 유지 수단)는 시간, 공간, 기억과 자아 감각이 크게 왜곡될 때 사용자를 현실에 붙잡아 주는 활동이나 물건을 말합니다. 고용량에서는 심한 방향감각 상실과 혼란이 발생할 수 있습니다. 앵커는 흔히 이러한 상태를 상쇄하고 현재 실제 상황을 유지하는 데 사용됩니다.","환각제 사용에서 앵커(현실감 유지 수단)는 시간, 공간, 기억과 자아 감각이 크게 왜곡될 때 사용자를 현실에 붙잡아 주는 활동이나 물건을 말합니다. 고용량에서는 심한 방향감각 상실과 혼란이 발생할 수 있습니다. 앵커는 흔히 이러한 상태를 상쇄하고 현재 실제 상황을 유지하는 데 사용됩니다."
+t0092,settings,KJournal 5 PB8.9,,smali,iw0.smali,3773,KJournal 5 PB8.9,KJournal 5 PB8.9,KJournal 5 PB8.9
+t0093,settings,"Once the user has become intimately familiar with their substance of choice, it is up to them as an individual whether they would be comfortable tripping in a less controlled environment such as out in nature, social gatherings, parties, raves, etc. However, it should be noted that tripping in these settings entails considerably more physical and legal risk.",,smali,iw0.smali,2097,"선택한 물질의 특성과 반응을 충분히 익힌 뒤, 자연 속이나 모임, 파티, 레이브처럼 환경을 조절하기 어려운 곳에서도 편안하게 트립을 경험할 수 있을지는 각자가 판단할 일이다. 다만 이러한 환경에서는 신체적·법적 위험이 훨씬 커진다는 점을 알아 두어야 한다.","사용하려는 물질의 특성에 익숙해진 뒤에는 자연 속, 사교 모임, 파티, 레이브 등 통제하기 어려운 환경에서 트립을 할지 여부를 각자가 판단할 수 있습니다. 다만 이러한 장소에서의 트립은 신체적·법적 위험이 훨씬 커진다는 점을 유념해야 합니다.","사용하려는 물질의 특성에 익숙해진 뒤에는 자연 속, 사교 모임, 파티, 레이브 등 통제하기 어려운 환경에서 트립을 할지 여부를 각자가 판단할 수 있습니다. 다만 이러한 장소에서의 트립은 신체적·법적 위험이 훨씬 커진다는 점을 유념해야 합니다."
+t0094,settings,"Pay attention to hygiene in general, wash your hands before and after consumption and always use a clean, dry and smooth surface (mirror or similar). Do not snort on/from dirty surfaces such as toilets.",,smali,iw0.smali,384,"전반적인 위생에 신경 쓰고, 사용 전후에 손을 씻어야 한다. 거울처럼 깨끗하고 건조하며 매끄러운 표면을 사용해야 한다. 화장실 시설 등 더러운 표면 위에 물질을 놓고 코로 흡입하지 않아야 한다.","전반적인 위생에 신경 쓰세요. 사용 전후에 손을 씻고, 항상 깨끗하고 건조하며 매끄러운 표면(거울 등)을 사용하세요. 화장실과 같이 더러운 표면에서는 물질을 놓고 코로 흡입하지 마세요.","전반적인 위생에 신경 쓰세요. 사용 전후에 손을 씻고, 항상 깨끗하고 건조하며 매끄러운 표면(거울 등)을 사용하세요. 화장실과 같이 더러운 표면에서는 물질을 놓고 코로 흡입하지 마세요."
+t0095,settings,"The user's current bodily condition is just as important as one's mood and mindset when going into a trip. If one feels tired, sick or injured, these sensations will manifest as amplified versions of the same conditions which, when combined with possible body load, may easily detract from or ruin the experience.
+Instead of tripping while stressed, tired, sick or injured, one should wait for a more suitable opportunity. This will drastically lower the chances of having a negative or unfulfilling experience.",,smali,iw0.smali,1577,"트립을 시작할 때의 몸 상태는 기분이나 마음가짐만큼 중요하다. 피곤하거나 아프거나 다친 상태라면 그 감각이 더욱 강하게 느껴질 수 있다. 여기에 물질로 인한 신체적 불편감까지 더해지면 경험이 불쾌해지거나 망가질 수 있다.
+스트레스를 받거나 피곤하거나 아프거나 다친 상태에서는 트립을 하기보다 더 적절한 때를 기다리는 것이 좋다. 그러면 부정적이거나 만족스럽지 못한 경험을 할 가능성을 크게 줄일 수 있다.","트립에 들어갈 때의 신체 상태는 기분이나 마음가짐만큼 중요합니다. 피곤하거나 아프거나 다친 상태라면 그러한 감각이 증폭되어 나타날 수 있으며, 물질로 인한 신체적 불편감과 맞물리면 경험을 해치거나 망칠 수 있습니다.
+스트레스 받거나 피곤하거나 아프거나 다친 상태에서는 트립을 하지 말고 더 적절한 시기를 기다리세요. 그러면 부정적이거나 만족스럽지 못한 경험을 할 가능성을 크게 줄일 수 있습니다.","트립에 들어갈 때의 신체 상태는 기분이나 마음가짐만큼 중요합니다. 피곤하거나 아프거나 다친 상태라면 그러한 감각이 증폭되어 나타날 수 있으며, 물질로 인한 신체적 불편감과 맞물리면 경험을 해치거나 망칠 수 있습니다.
+스트레스 받거나 피곤하거나 아프거나 다친 상태에서는 트립을 하지 말고 더 적절한 시기를 기다리세요. 그러면 부정적이거나 만족스럽지 못한 경험을 할 가능성을 크게 줄일 수 있습니다."
+t0096,settings,"The user's set or state of mind in plays a major role in determining the outcome of a trip. Hallucinogens amplify one's current state of mind, mood and outlook: a positive mindset will likely become more positive and a negative one will become even more negative. As a result, hallucinogens should generally be avoided during acutely stressful or negative periods of life. Users should be fully aware of the ways in which hallucinogens, particularly psychedelics, are able to force one to face their internal problems that they may not be psychologically prepared to handle at that time.
+Those with preexisting mental conditions (especially individuals with psychotic illnesses like schizophrenia) should avoid hallucinogens due to the way they can strongly amplify one's underlying mental and emotional state as well as promote delusions and hallucinations. Those who wish to take hallucinogens with such conditions should seek the advice of a qualified medical practitioner.
+A common piece of advice while tripping is to ""let go"" and allow the effects of the substance to take charge. One should take the metaphorical passenger seat and forgo trying to control or suppress any part of the experience. It is extremely important that the user simply relaxes and take things as they come, as any resistance will only serve to amplify what is trying to be avoided.
+Additionally, the user must understand that the experience of tripping is often ungraspable, meaning that one should accept being unable to understand or express the full scope of what is happening during the experience. The user should embrace the fact that their thought processes, although potentially more lucid in some ways, will be unavoidably impaired along with fine motor control, conversational skills, and situational awareness. The user should be sure to frequently remind themselves that these effects are normal and, most importantly, temporary.",,smali,iw0.smali,1810,"트립을 시작할 때의 심리 상태와 마음가짐은 경험의 결과에 큰 영향을 미친다. 환각제는 현재의 심리 상태, 기분, 관점을 증폭한다. 긍정적인 마음은 더 긍정적으로, 부정적인 마음은 더 부정적으로 바뀔 수 있다. 따라서 스트레스가 극심하거나 힘든 시기에는 일반적으로 환각제를 피하는 것이 좋다. 특히 사이키델릭을 비롯한 환각제는 아직 심리적으로 감당할 준비가 되지 않은 내면의 문제를 마주하게 만들 수 있다는 점을 충분히 이해해야 한다.
+기존에 정신건강 문제가 있는 사람, 특히 조현병과 같은 정신증적 질환이 있는 사람은 환각제를 피해야 한다. 기존의 심리적·정서적 상태를 크게 증폭하고 망상과 환각을 유발할 수 있기 때문이다. 이런 상태에서 환각제 사용을 고려한다면 자격을 갖춘 의료 전문가와 상담해야 한다.
+트립 중 흔히 하는 조언은 ‘내려놓기’, 즉 물질의 효과가 흘러가는 대로 두라는 것이다. 비유하자면 조수석에 앉아, 경험의 일부를 통제하거나 억누르려는 시도를 내려놓는 것이다. 긴장을 풀고 일어나는 일을 있는 그대로 받아들이는 것이 매우 중요하다. 저항하려고 할수록 피하려던 경험이 더 강해질 수 있기 때문이다.
+또한 트립은 온전히 이해하기 어려운 경험일 수 있으므로, 지금 일어나는 모든 일을 이해하거나 표현할 수 없다는 점을 받아들여야 한다. 어떤 면에서는 생각이 더 명료하게 느껴질 수 있어도, 사고 과정과 섬세한 동작 조절, 대화 능력, 상황 판단력은 영향을 받을 수밖에 없다. 이런 효과가 나타날 수 있으며 무엇보다 일시적이라는 점을 자주 상기해야 한다.","트립의 결과는 사용자의 심리 상태와 마음가짐(set or state of mind)이 큰 역할을 합니다. 환각제는 현재의 심리 상태, 기분, 관점을 증폭시키기 때문에 긍정적인 마음가짐은 더 긍정적으로, 부정적인 마음가짐은 더 부정적으로 변할 수 있습니다. 따라서 급격히 스트레스가 많은 시기나 부정적인 상황에서는 일반적으로 환각제 사용을 피하는 것이 좋습니다. 특히 사이키델릭류 환각제는 심리적으로 준비되지 않은 내면의 문제를 마주하게 할 수 있다는 점을 충분히 이해해야 합니다.
+기존에 정신과적 문제가 있는 경우(특히 조현병과 같은 정신증적 질환을 가진 사람)는 환각제를 피해야 합니다. 환각제는 기저의 정신적·정서적 상태를 강하게 증폭하고 망상과 환각을 촉진할 수 있습니다. 이런 상태에서 환각제 사용을 고려한다면 반드시 자격을 갖춘 의료 전문가의 조언을 구하세요.
+트립 중 흔히 주어지는 조언은 ‘내려놓기’입니다. 물질의 효과에 맡기고 통제하거나 억누르려 하지 말라는 의미로, 비유하자면 조수석에 앉아 경험을 강제로 제어하려는 시도를 그만두는 것입니다. 긴장을 풀고 일어나는 일을 있는 그대로 받아들이는 것이 매우 중요합니다. 저항하면 저항하는 대상이 더 강해질 가능성이 큽니다.
+또한 트립 경험은 종종 완전히 이해하기 어렵기 때문에, 경험 중에 모든 것을 이해하거나 표현할 수 없다는 사실을 받아들이는 것이 필요합니다. 어떤 면에서는 사고가 더 명료하게 느껴질 수 있지만, 미세한 운동 조절, 대화 능력, 상황 판단력 등은 영향을 받을 수밖에 없습니다. 이러한 효과가 나타나는 것이 정상이며 무엇보다 일시적이라는 점을 자주 상기하세요.","트립의 결과는 사용자의 심리 상태와 마음가짐(set or state of mind)이 큰 역할을 합니다. 환각제는 현재의 심리 상태, 기분, 관점을 증폭시키기 때문에 긍정적인 마음가짐은 더 긍정적으로, 부정적인 마음가짐은 더 부정적으로 변할 수 있습니다. 따라서 급격히 스트레스가 많은 시기나 부정적인 상황에서는 일반적으로 환각제 사용을 피하는 것이 좋습니다. 특히 사이키델릭류 환각제는 심리적으로 준비되지 않은 내면의 문제를 마주하게 할 수 있다는 점을 충분히 이해해야 합니다.
+기존에 정신과적 문제가 있는 경우(특히 조현병과 같은 정신증적 질환을 가진 사람)는 환각제를 피해야 합니다. 환각제는 기저의 정신적·정서적 상태를 강하게 증폭하고 망상과 환각을 촉진할 수 있습니다. 이런 상태에서 환각제 사용을 고려한다면 반드시 자격을 갖춘 의료 전문가의 조언을 구하세요.
+트립 중 흔히 주어지는 조언은 ‘내려놓기’입니다. 물질의 효과에 맡기고 통제하거나 억누르려 하지 말라는 의미로, 비유하자면 조수석에 앉아 경험을 강제로 제어하려는 시도를 그만두는 것입니다. 긴장을 풀고 일어나는 일을 있는 그대로 받아들이는 것이 매우 중요합니다. 저항하면 저항하는 대상이 더 강해질 가능성이 큽니다.
+또한 트립 경험은 종종 완전히 이해하기 어렵기 때문에, 경험 중에 모든 것을 이해하거나 표현할 수 없다는 사실을 받아들이는 것이 필요합니다. 어떤 면에서는 사고가 더 명료하게 느껴질 수 있지만, 미세한 운동 조절, 대화 능력, 상황 판단력 등은 영향을 받을 수밖에 없습니다. 이러한 효과가 나타나는 것이 정상이며 무엇보다 일시적이라는 점을 자주 상기하세요."
+t0097,settings,"Writing an easily readable reminder onto a large piece of paper and placing it close within one's visual field throughout the experience. Common reminders include the name of the substance along with its dosage and phrases such as ""You are tripping on LSD."" The same principle can be used to write reminders on one's hand or other visible body parts.",,smali,iw0.smali,1071,"큰 종이에 쉽게 읽을 수 있는 안내 문구를 적어, 경험이 지속되는 동안 잘 보이는 가까운 곳에 놓아두는 방법이다. 물질의 이름과 용량, ‘지금은 LSD의 영향을 받고 있다’ 같은 문구를 적을 수 있다. 같은 방식으로 손이나 눈에 잘 띄는 다른 신체 부위에 안내 문구를 적을 수도 있다.","큰 종이에 읽기 쉬운 안내 문구를 적어 경험 중에 시야 가까운 곳에 두세요. 흔한 문구로는 물질 이름과 용량, 그리고 ""지금은 LSD의 영향을 받고 있습니다"" 같은 문구가 있습니다. 같은 원리로 손이나 잘 보이는 신체 부위에 안내 문구를 적어둘 수도 있습니다.","큰 종이에 읽기 쉬운 안내 문구를 적어 경험 중에 시야 가까운 곳에 두세요. 흔한 문구로는 물질 이름과 용량, 그리고 ""지금은 LSD의 영향을 받고 있습니다"" 같은 문구가 있습니다. 같은 원리로 손이나 잘 보이는 신체 부위에 안내 문구를 적어둘 수도 있습니다."
+t0098,stats,Stats,,smali,u86.smali,535,통계,통계,통계
+t0099,stats_range,Choose a shorter range to show at most 31 yearly buckets.,,smali,b96.smali,2891,연도별 구간이 최대 31개만 표시되도록 기간을 줄여야 한다.,연도별 구간을 최대 31개까지만 표시하려면 범위를 좁히세요.,연도별 구간을 최대 31개까지만 표시하려면 범위를 좁히세요.
+t0100,substance_colors,Bioavailability: ,,smali,ra.smali,1371,생체이용률: ,생체이용률: ,생체이용률: 
+t0101,substance_docs,"A route of administration is the method in which a psychoactive substance is delivered into the body.
+The route through which a substance is administered can greatly impact its potency, duration, and subjective effects. For example, many substances are more effective when consumed using particular routes of administration, while some substances are completely inactive with certain routes.
+Determining an optimal route of administration is highly dependent on the substance consumed, its desired duration and potency and side effects, and one's personal comfort level.",,smali,ow0.smali,5354,"사용 경로는 정신활성 물질이 체내로 들어가는 방식을 뜻한다.
+사용 경로에 따라 효과의 강도, 지속 시간, 주관적으로 느끼는 효과가 크게 달라질 수 있다. 예를 들어 특정 경로에서 효과가 더 강해지는 물질이 있는 반면, 어떤 경로에서는 전혀 작용하지 않는 물질도 있다.
+적절한 사용 경로는 물질의 종류, 원하는 지속 시간과 효과의 강도, 부작용, 개인이 느끼는 편안함에 따라 크게 달라진다.","사용 경로는 정신활성 물질이 체내로 들어가는 방법입니다.
+사용 경로에 따라 약효의 강도, 지속 시간, 그리고 주관적인 체감이 크게 달라질 수 있습니다. 예를 들어 특정 경로로 섭취했을 때 효과가 더 강해지는 물질이 있는 반면, 어떤 경로에서는 전혀 작용하지 않는 물질도 있습니다.
+어떤 사용 경로가 최적인지는 섭취하는 물질의 종류, 원하는 지속 시간 및 효과의 강도와 부작용, 그리고 개인의 편안함 수준에 따라 크게 달라집니다.","사용 경로는 정신활성 물질이 체내로 들어가는 방법입니다.
+사용 경로에 따라 약효의 강도, 지속 시간, 그리고 주관적인 체감이 크게 달라질 수 있습니다. 예를 들어 특정 경로로 섭취했을 때 효과가 더 강해지는 물질이 있는 반면, 어떤 경로에서는 전혀 작용하지 않는 물질도 있습니다.
+어떤 사용 경로가 최적인지는 섭취하는 물질의 종류, 원하는 지속 시간 및 효과의 강도와 부작용, 그리고 개인의 편안함 수준에 따라 크게 달라집니다."
+t0102,substance_docs,Filter,,smali,ow0.smali,2085,필터,필터,필터
+t0103,substance_docs,New,,smali,ow0.smali,125,새 항목,새 항목,새 항목
+t0104,substance_docs,Open link,,smali,ow0.smali,2217,링크 열기,링크 열기,링크 열기
+t0105,substance_docs,"The information below is exclusively tailored for the use and experimentation with hallucinogens such as psychedelics, dissociatives, and deliriants.",,smali,ow0.smali,4833,"아래 정보는 사이키델릭, 해리제, 섬망제 등 환각제의 사용과 경험만을 대상으로 작성되었다.","아래 정보는 사이키델릭, 해리제, 섬망제 등 환각제의 사용 및 실험에만 해당합니다.","아래 정보는 사이키델릭, 해리제, 섬망제 등 환각제의 사용 및 실험에만 해당합니다."
+t0106,substance_docs,"The nose is a sensitive organ: fine hairs protect the nasal mucous membranes from external impurities (dust, pollen, etc.). If a foreign substance is now ingested through the nose, this and its mucous membranes are subjected to above-average stress. This can lead to disturbances in smelling or even to holes in the nasal mucous membranes. If sniffing utensils are shared, there is also a risk of bacteria and viruses being transmitted. If the utensils are contaminated with blood, the worst case scenario is the transmission of hepatitis C viruses. If the nasal mucous membranes are irritated and injured, the probability of such transmission is all the higher. Therefore, when you have a cold, it is important to give the sensitive organ of the nose the care it needs.",,smali,ow0.smali,4654,코는 민감한 기관이다. 미세한 털이 먼지나 꽃가루 같은 외부 이물질로부터 코점막을 보호한다. 물질을 코로 흡입하면 코와 점막에 평소보다 큰 부담이 가해진다. 이로 인해 후각에 문제가 생기거나 코점막에 구멍이 생길 수도 있다. 흡입 도구를 공유하면 세균과 바이러스가 전파될 위험도 있다. 도구가 혈액으로 오염되어 있다면 최악의 경우 C형간염 바이러스가 전파될 수 있다. 코점막이 자극받고 손상된 상태에서는 감염 위험이 더욱 높아진다. 따라서 감기에 걸렸을 때는 특히 민감한 코를 세심하게 관리하는 것이 중요하다.,코는 민감한 기관입니다. 미세한 털이 코 점막을 먼지·꽃가루 등의 외부 이물질로부터 보호합니다. 물질을 코로 흡입하면 코와 점막에 평소보다 큰 부담이 가해집니다. 이로 인해 후각에 문제가 생기거나 코 점막에 구멍이 생길 수 있습니다. 흡입 도구를 공유하면 세균과 바이러스가 전파될 위험도 있습니다. 도구가 혈액으로 오염되어 있다면 최악의 경우 C형 간염 바이러스가 전파될 수 있습니다. 코 점막이 자극받거나 손상된 상태라면 이러한 전파 가능성은 더 높아집니다. 따라서 감기에 걸렸을 때는 민감한 코를 특히 주의해서 관리해야 합니다.,코는 민감한 기관입니다. 미세한 털이 코 점막을 먼지·꽃가루 등의 외부 이물질로부터 보호합니다. 물질을 코로 흡입하면 코와 점막에 평소보다 큰 부담이 가해집니다. 이로 인해 후각에 문제가 생기거나 코 점막에 구멍이 생길 수 있습니다. 흡입 도구를 공유하면 세균과 바이러스가 전파될 위험도 있습니다. 도구가 혈액으로 오염되어 있다면 최악의 경우 C형 간염 바이러스가 전파될 수 있습니다. 코 점막이 자극받거나 손상된 상태라면 이러한 전파 가능성은 더 높아집니다. 따라서 감기에 걸렸을 때는 민감한 코를 특히 주의해서 관리해야 합니다.
+t0107,timeline,Because the information on tolerance and cross tolerance does not yet allow to do this reliably.,,smali,ew0.smali,1994,현재의 내성 및 교차 내성 정보만으로는 이를 신뢰할 만한 수준으로 계산하기 어렵기 때문이다.,내성 및 교차 내성에 관한 정보가 아직 이를 신뢰할 수 있게 판단할 만큼 충분하지 않기 때문입니다.,내성 및 교차 내성에 관한 정보가 아직 이를 신뢰할 수 있게 판단할 만큼 충분하지 않기 때문입니다.
+t0108,timeline,"Duration refers to the length of time over which the subjective effects of a psychoactive substance manifest themselves.
+Duration can be broken down into 6 parts: (1) total duration (2) onset (3) come up (4) peak (5) offset and (6) after effects. Depending upon the substance consumed, each of these occurs in a separate and continuous fashion.",,smali,ew0.smali,2106,"지속 시간은 정신활성 물질의 주관적 효과가 나타나는 시간의 길이를 뜻한다.
+지속 시간은 여섯 부분으로 나눌 수 있다. (1) 전체 지속 시간, (2) 효과 발현까지 걸리는 시간, (3) 효과 상승기, (4) 효과 정점기, (5) 효과 감소기, (6) 잔여 효과다. 각 단계의 양상과 연속성은 사용한 물질에 따라 달라진다.","지속 시간은 정신활성 물질의 주관적 효과가 나타나는 시간의 길이를 뜻합니다.
+지속 시간은 여섯 부분으로 나눌 수 있습니다: (1) 전체 지속 시간 (2) 시작( onset ) (3) 상승( come up ) (4) 절정( peak ) (5) 감소( offset ) 그리고 (6) 잔여 효과( after effects ). 사용한 물질에 따라 각 단계가 별개로 또는 연속적으로 나타납니다.","지속 시간은 정신활성 물질의 주관적 효과가 나타나는 시간의 길이를 뜻합니다.
+지속 시간은 여섯 부분으로 나눌 수 있습니다: (1) 전체 지속 시간 (2) 시작( onset ) (3) 상승( come up ) (4) 절정( peak ) (5) 감소( offset ) 그리고 (6) 잔여 효과( after effects ). 사용한 물질에 따라 각 단계가 별개로 또는 연속적으로 나타납니다."
+t0109,timeline,"Enable this setting if you want the timeline of different substances and routes of administration (roas) to be independent. Then ingestions of different substances and roas will always take the full height of the timeline.
+
+If this setting is disabled then timelines of different substances have a height relative to each other. In that case the average of the common dose is used as the point to compare it to.
+E.g. if the oral average common dose of MDMA is 100mg and the average common dose of insufflated MDMA is 50mg then the timeline for 100mg of oral MDMA is the same height as for 50mg of insufflated MDMA.
+This is also applied across substances. E.g. if the common dose of oral 2C-B is 20mg then the timeline of 40mg oral 2C-B will be twice as high as 100mg of oral MDMA.",,smali,ew0.smali,187,"물질과 사용 경로별 타임라인을 서로 독립적으로 표시하려면 이 설정을 켠다. 각 물질과 사용 경로의 사용 기록이 타임라인의 전체 높이로 표시된다.
+
+이 설정을 끄면 서로 다른 물질의 타임라인 높이를 상대적으로 표시한다. 이때 일반 용량 범위의 평균값을 비교 기준으로 사용한다.
+예를 들어 MDMA의 경구 사용 시 일반 용량 평균이 100mg이고 코로 흡입할 때의 일반 용량 평균이 50mg이라면, 경구 100mg과 코 흡입 50mg의 타임라인이 같은 높이로 표시된다.
+서로 다른 물질에도 같은 기준이 적용된다. 예를 들어 2C-B의 경구 일반 용량이 20mg이라면, 경구 40mg의 타임라인은 MDMA 경구 100mg 타임라인의 두 배 높이로 표시된다.","이 설정을 켜면 서로 다른 물질과 사용 경로(roas)의 타임라인을 독립적으로 표시합니다. 그러면 서로 다른 물질과 사용 경로의 섭취 기록이 항상 타임라인의 전체 높이를 차지합니다.
+
+이 설정을 끄면 서로 다른 물질의 타임라인 높이를 서로에 대해 상대적으로 표시합니다. 이 경우 비교 기준으로 일반 용량의 평균값을 사용합니다.
+예: MDMA의 경구 일반 용량 평균이 100mg이고 비강 흡입(코로 흡입) 시 일반 용량 평균이 50mg이라면, 경구 MDMA 100mg의 타임라인은 비강 흡입 MDMA 50mg의 타임라인과 같은 높이로 표시됩니다.
+이 기준은 서로 다른 물질 간에도 적용됩니다. 예: 경구 2C‑B의 일반 용량이 20mg이면, 경구 2C‑B 40mg의 타임라인은 경구 MDMA 100mg의 타임라인보다 두 배 높게 표시됩니다.","이 설정을 켜면 서로 다른 물질과 사용 경로(roas)의 타임라인을 독립적으로 표시합니다. 그러면 서로 다른 물질과 사용 경로의 섭취 기록이 항상 타임라인의 전체 높이를 차지합니다.
+
+이 설정을 끄면 서로 다른 물질의 타임라인 높이를 서로에 대해 상대적으로 표시합니다. 이 경우 비교 기준으로 일반 용량의 평균값을 사용합니다.
+예: MDMA의 경구 일반 용량 평균이 100mg이고 비강 흡입(코로 흡입) 시 일반 용량 평균이 50mg이라면, 경구 MDMA 100mg의 타임라인은 비강 흡입 MDMA 50mg의 타임라인과 같은 높이로 표시됩니다.
+이 기준은 서로 다른 물질 간에도 적용됩니다. 예: 경구 2C‑B의 일반 용량이 20mg이면, 경구 2C‑B 40mg의 타임라인은 경구 MDMA 100mg의 타임라인보다 두 배 높게 표시됩니다."
+t0110,timeline,Explanations,,smali,ew0.smali,1252,설명,설명,설명
+t0111,timeline,"Optional. Leave all duration fields empty to save dose only. If you add duration, complete every range.",,smali,ew0.smali,4627,선택 사항이다. 용량만 저장하려면 지속 시간 입력란을 모두 비워 두어야 한다. 지속 시간을 입력하려면 모든 구간을 빠짐없이 입력해야 한다.,선택 사항입니다. 용량만 저장하려면 모든 지속 시간 입력란을 비워 두세요. 지속 시간을 추가하면 모든 구간을 빠짐없이 입력해야 합니다.,선택 사항입니다. 용량만 저장하려면 모든 지속 시간 입력란을 비워 두세요. 지속 시간을 추가하면 모든 구간을 빠짐없이 입력해야 합니다.
+t0112,timeline,Start:,,smali,ie.smali,738,시작:,시작:,시작:
+t0113,timeline,Total,,smali,ew0.smali,2200,전체,합계,합계

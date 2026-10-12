@@ -1,0 +1,7 @@
+﻿"file","line","english","korean","note"
+"bt1.smali","11","THRESHOLD","역치","DoseClass.THRESHOLD enum name"
+"zs1.smali","11","LIGHT","낮음","DoseClass.LIGHT enum name"
+"xs1.smali","11","COMMON","보통","DoseClass.COMMON enum name"
+"at1.smali","11","STRONG","강함","DoseClass.STRONG enum name"
+"ys1.smali","11","HEAVY","매우 강함","DoseClass.HEAVY enum name"
+"cw0.smali","319"," DOSAGE"," 용량","'{class} DOSAGE' title"

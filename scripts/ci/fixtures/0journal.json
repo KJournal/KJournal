@@ -1,0 +1,7 @@
+[
+  {"substanceName": "Caffeine", "dose": 100, "unit": "mg", "route": "oral", "note": "ci fixture"},
+  {"substanceName": "LSD", "dose": 100, "unit": "ug", "route": "sublingual"},
+  {"substanceName": "Diphenhydramine", "dose": 50, "unit": "mg", "route": "oral"},
+  {"substanceName": "Psilocybin", "dose": 10, "unit": "mg", "route": "oral"},
+  {"substanceName": "MDMA", "dose": 120, "unit": "mg", "route": "oral"}
+]

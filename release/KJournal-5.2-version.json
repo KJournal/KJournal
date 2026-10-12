@@ -1,0 +1,7 @@
+{
+  "versionCode": 5034,
+  "versionName": "5.2",
+  "downloadUrl": "https://github.com/KJournal/KJournal-Android/releases/download/v5.2/KJournal-5.2.apk",
+  "changelog": "KJournal 5.2\n\n수정\n- 경험 탭: 커스텀 유닛(제품)으로만 기록된 섭취가 포함된 경험을 열 때 앱이 강제 종료되던 문제를 수정했습니다. 상호작용을 계산할 때 이름이 없는(커스텀 유닛) 섭취는 조회 대상에서 제외합니다.\nGitHub: https://github.com/KJournal\n사이트: https://kjournal.github.io/kjournal-site/\n",
+  "sha256": "d692919f83b5213dffcda3e8b760c76706bad4c5b23d3ccb21df70f60586490e"
+}

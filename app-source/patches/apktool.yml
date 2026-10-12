@@ -1,0 +1,21 @@
+version: 3.0.3
+apkFileName: KJournal-5-PB6.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 28
+  targetSdkVersion: 37
+versionInfo:
+  versionCode: 5016
+  versionName: 5 PB6
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- dex
+- jpg
+- png
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

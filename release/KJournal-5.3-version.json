@@ -1,0 +1,7 @@
+{
+  "versionCode": 5035,
+  "versionName": "5.3",
+  "downloadUrl": "https://github.com/KJournal/KJournal-Android/releases/download/v5.3/KJournal-5.3.apk",
+  "changelog": "KJournal 5.3\n\n신기능\n- 배타 채널의 변경사항을 정식 채널로 통합했습니다.\n- 미번역으로 남아 있던 UI 문구를 한국어로 적용했습니다. (복용량 등급/용량 라벨, FAQ, 안전사용 가이드, 경험 편집, 사용자 단위, 약물검사 국가 등)\nGitHub: https://github.com/KJournal\n사이트: https://kjournal.github.io/kjournal-site/\n",
+  "sha256": "bb46d1d64316e3771e6b3ebfe32e1d7f3b627aa16e862561ce8cc862e7b1c1f7"
+}

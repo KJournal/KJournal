@@ -39,6 +39,4 @@
 
 <div align="center">
 
-`record · understand · improve`
-
 </div>
